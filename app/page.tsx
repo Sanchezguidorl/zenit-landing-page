@@ -1,34 +1,26 @@
-"use client"
+import Header from "./src/components/layouts/Header";
+import Presentation from './src/components/sections/Presentation';
 
-import React, { useRef, useEffect } from 'react';
 
-function MouseInteractive() {
-    const divRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const div = divRef.current;
+function Home() {
+  return (
 
-        if (div !== null) {
-            const handleMouseMove = (e: MouseEvent) => {
-                div.style.left = e.clientX + 'px';
-                div.style.top = e.clientY + 'px';
-            };
+<div className="w-full h-full relative z-20">
+<Header/>
+<div className="container mx-auto">
+<Presentation/>
+<h1 className="mt-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iusto? Commodi ipsum aut, voluptas voluptate aliquam dolorum id ex voluptates iusto voluptatem, facilis alias fugit natus recusandae autem magni tempora.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iusto? Commodi ipsum aut, voluptas voluptate aliquam dolorum id ex voluptates iusto voluptatem, facilis alias fugit natus recusandae autem magni tempora.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iusto? Commodi ipsum aut, voluptas voluptate aliquam dolorum id ex voluptates iusto voluptatem, facilis alias fugit natus recusandae autem magni tempora.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iusto? Commodi ipsum aut, voluptas voluptate aliquam dolorum id ex voluptates iusto voluptatem, facilis alias fugit natus recusandae autem magni tempora.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iusto? Commodi ipsum aut, voluptas voluptate aliquam dolorum id ex voluptates iusto voluptatem, facilis alias fugit natus recusandae autem magni tempora.</h1>
 
-            window.addEventListener('mousemove', handleMouseMove);
 
-            return () => {
-                window.removeEventListener('mousemove', handleMouseMove);
-            };
-        }
-    }, []);
+</div>
+</div>
 
-    return (
-        <div className='w-full h-full bg-dark-blue relative'>
-            <div ref={divRef} className='w-20 h-20 bg-secondary absolute'>
-                Tu div que sigue al cursor
-            </div>
-        </div>
-    );
+  );
 }
 
-export default MouseInteractive;
+export default Home;

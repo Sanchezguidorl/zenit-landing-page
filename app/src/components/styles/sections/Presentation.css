@@ -1,0 +1,22 @@
+#Presentation {
+    .gradient-mask-container {
+        background: linear-gradient(235deg, #304FFE, #00ACC1, #4A148C);
+        max-width: 1100px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        p,
+        h1 {
+            letter-spacing: 2px;
+        }
+
+        .gradient-mask-silver {
+            background: linear-gradient(180deg, #fff 50%, #333);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    }
+}

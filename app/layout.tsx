@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./src/components/styles/main.css";
+import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="">
+        <div className="absolute h-full w-full">
+        <BgEffectContainer/>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "author":{
+    "name":"Guido Abel Sanchez",
+    "email": "sanchezguidorl@gmail.com"
+  },
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
