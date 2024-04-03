@@ -1,0 +1,9 @@
+#OurService{
+    #DesignsImage{
+        background: radial-gradient(#304ffe3c 10%, #00000000 70%);
+        filter: drop-shadow(0px 0px 10px rgb(229, 221, 252));
+    }
+    p{
+        background: radial-gradient(#304ffe27 10%, #00000000 70%);
+    }
+}

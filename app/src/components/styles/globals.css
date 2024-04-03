@@ -24,3 +24,9 @@ body {
   background-color: #212121;
 }
 
+.gradient-mask-silver {
+  background: linear-gradient(180deg, #fff 50%, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

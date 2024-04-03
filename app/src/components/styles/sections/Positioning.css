@@ -6,6 +6,7 @@
 
     p{
         letter-spacing: 2px;
+        background: radial-gradient(#a653ff23 10%, #00000000 70%);
     }
 }
 

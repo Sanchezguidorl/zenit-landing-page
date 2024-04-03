@@ -11,12 +11,8 @@
             letter-spacing: 2px;
         }
 
-        .gradient-mask-silver {
-            background: linear-gradient(180deg, #fff 50%, #333);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        h1{
+            background: radial-gradient(#657cff3a 10%, #00000000 60%);
         }
-
     }
 }
