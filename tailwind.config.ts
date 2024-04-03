@@ -14,7 +14,9 @@ const config: Config = {
       "blue": "#304FFE",
       "dark-blue": "#3949AB",
       "purple": "#4A148C",
-      "white": "#ffffff",
+      "white": "#ffffffcc",
+      "transparent": "#00000000",
+
     },
     extend: {
       backgroundImage: {

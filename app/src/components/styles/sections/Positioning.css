@@ -1,0 +1,22 @@
+#Positioning{
+    .stella{
+        width: 3px;
+        background: linear-gradient(#ffffffbb, #21212100);
+    }
+
+    p{
+        letter-spacing: 2px;
+    }
+}
+
+.border-gradient-stella-to-right{
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to right, white, transparent); 
+    border-image-slice: 1;
+}
+
+.border-gradient-stella-to-left{
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to left, white, transparent); 
+    border-image-slice: 1;
+}
