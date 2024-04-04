@@ -30,3 +30,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.bg-semitransparent{
+  background: linear-gradient(#bcb9b93a, #5c5c5c2f);
+  outline: none;
+}
+
+
+.bg-gradient-socialmedia{
+  background: linear-gradient(180deg, #e1e1e1c6 50%, #333);
+ border-radius: 10px;
+}

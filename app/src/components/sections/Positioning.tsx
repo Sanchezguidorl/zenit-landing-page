@@ -4,12 +4,12 @@ import Image from "next/image";
 
 function Positioning() {
   return (
-    <div id="Positioning" className=" mb-20">
-      <div className="flex flex-col mx-auto w-fit items-center">
+    <div id="Positioning" className=" mb-28">
+      <div className="flex flex-col mx-auto w-fit items-center mb-28">
         <Image
           src={ShipIcon}
           alt="Icono de nave espacial"
-          className="w-32 text-white"
+          className=" w-28 text-white"
         />
         <div className="stella rounded-xl h-[220px]"></div>
       </div>

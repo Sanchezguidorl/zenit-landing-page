@@ -1,0 +1,25 @@
+#Contact{
+
+input[type="submit"]{
+   padding: 8px 60px;
+   border: 2px solid transparent;
+   border-image: linear-gradient(to left,rgba(92, 92, 92, 0.522) , rgb(255, 255, 255),rgba(92, 92, 92, 0.522) ); 
+   border-image-slice: 1;
+   transition: all 2s ease-in-out;
+   cursor: pointer;
+}
+input[type="submit"]:hover{
+   border-image: linear-gradient(to left,rgba(219, 219, 219, 0.522) , rgb(255, 255, 255),rgba(219, 219, 219, 0.522)); 
+   border-image-slice: 1;
+   background-color: rgba(222, 222, 222, 0.164);
+   color: black;
+}
+
+.bg-gradient-contact-r{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff);
+}
+.bg-gradient-contact-l{
+    background: linear-gradient(90deg,#fff , rgba(255, 255, 255, 0));
+}
+
+}

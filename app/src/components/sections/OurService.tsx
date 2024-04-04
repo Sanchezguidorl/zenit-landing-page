@@ -3,7 +3,7 @@ import DesignsImg from "/public/responsiveDesign.webp";
 
 function OurService() {
   return (
-    <div className="flex flex-col lg:flex-row flex-wrap py-28 border-b border-b-no-dark border-t border-t-no-dark" id="OurService">
+    <div className="flex flex-col lg:flex-row flex-wrap py-20 border-b border-b-no-dark border-t border-t-no-dark" id="OurService">
       <div className="w-full lg:w-1/2">
         <Image src={DesignsImg} id="DesignsImage" alt="Imagen de diseños de sitios web en diferentes dispositivos" />
       </div>
@@ -32,7 +32,7 @@ function OurService() {
             satisfactoria.
           </p>
         </div>
-        <div className="mb-8">
+        <div className="">
           <div className="gradient-mask-silver">
             <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
               Optimización para SEO

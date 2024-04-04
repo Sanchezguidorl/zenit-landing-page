@@ -1,0 +1,27 @@
+#Benefits{
+    .benefit-title{
+        background: linear-gradient(235deg, #516bff, #23e3fc, #732acc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .benefit{
+        animation: rotateForward 7s infinite;
+    }
+
+    .benefit-2{
+        animation: rotateForward 7s reverse infinite;
+    }
+}
+
+
+
+@keyframes rotateForward {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
