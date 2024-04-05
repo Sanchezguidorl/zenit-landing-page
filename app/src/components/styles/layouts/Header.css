@@ -1,0 +1,10 @@
+#Header{
+    li:hover{
+        background: radial-gradient(#a653ff23 10%, #00000000 70%);
+        text-shadow: 0px 0px 8px #fff;
+    }
+
+}
+.header-content-container{
+    background-color: #212121d8;
+}

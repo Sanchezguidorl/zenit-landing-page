@@ -7,11 +7,13 @@
     }
 
     .benefit{
-        animation: rotateForward 7s infinite;
+        translate: 60px;
+        animation: rotateForward 7s infinite linear;
     }
 
     .benefit-2{
-        animation: rotateForward 7s reverse infinite;
+        translate: -60px;
+        animation: rotateForward 7s reverse infinite linear;
     }
 }
 

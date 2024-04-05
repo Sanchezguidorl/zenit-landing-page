@@ -3,7 +3,7 @@ import DesignsImg from "/public/responsiveDesign.webp";
 
 function OurService() {
   return (
-    <div className="flex flex-col lg:flex-row flex-wrap py-20 border-b border-b-no-dark border-t border-t-no-dark" id="OurService">
+    <section className="flex flex-col lg:flex-row flex-wrap py-20 border-b border-b-no-dark border-t border-t-no-dark" id="OurService">
       <div className="w-full lg:w-1/2">
         <Image src={DesignsImg} id="DesignsImage" alt="Imagen de diseños de sitios web en diferentes dispositivos" />
       </div>
@@ -46,7 +46,7 @@ function OurService() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

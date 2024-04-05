@@ -1,4 +1,5 @@
 @import './layouts/BgEffectContainer.css';
+@import './layouts/Header.css';
 @import './sections/Presentation.css';
 @import './sections/Positioning.css';
 @import './sections/Contact.css';

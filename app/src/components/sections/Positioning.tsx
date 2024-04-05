@@ -1,11 +1,12 @@
-import PositioningBenefit from "../styles/layouts/PositioningBenefit";
+
+import PositioningBenefit from "./PositioningBenefit";
 import ShipIcon from "/public/shipIcon.svg";
 import Image from "next/image";
 
 function Positioning() {
   return (
     <div id="Positioning" className=" mb-28">
-      <div className="flex flex-col mx-auto w-fit items-center mb-28">
+      <div className="flex flex-col mx-auto w-fit items-center mb-28 ">
         <Image
           src={ShipIcon}
           alt="Icono de nave espacial"

@@ -1,4 +1,3 @@
-import MouseInteractive from "./MouseInteractive";
 
 function BgEffectContainer() {
   return (
@@ -28,7 +27,6 @@ function BgEffectContainer() {
         <div className="g4" >4</div>
         <div className="g5" >5</div>
         <div className="g6" >6</div>
-<MouseInteractive/> 
       </div>
     </div>
   );

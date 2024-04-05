@@ -41,3 +41,29 @@ body {
   background: linear-gradient(180deg, #e1e1e1c6 50%, #333);
  border-radius: 10px;
 }
+
+@keyframes ariseIn {
+  0%{
+    opacity: 0;
+    translate: 0px 100px;
+  }
+  100%{
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+@keyframes opacityIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.ariseAnimation{
+animation: ariseIn 1s forwards;
+}
+.fadeIn{
+animation: opacityIn 1s forwards;
+}

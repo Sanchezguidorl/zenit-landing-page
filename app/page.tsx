@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="w-full h-full relative overflow-hidden z-20">
       <Header />
-      <div className="container mx-auto">
+      <div className="container mx-auto fadeIn">
         <Presentation />
         <Positioning />
         <OurService />
