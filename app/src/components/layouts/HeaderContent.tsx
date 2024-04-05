@@ -36,7 +36,7 @@ function HeaderContent() {
     };
 
     window.addEventListener("resize", handleWindowResize);
-
+    handleWindowResize()
     document.addEventListener("click", handleClickOut);
 
     return () => {
