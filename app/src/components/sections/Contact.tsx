@@ -93,6 +93,7 @@ function Contact() {
             id="name"
             type="text"
             name="name"
+            placeholder="Ingresa tu nombre completo"
             required
           />
         </div>
@@ -106,6 +107,7 @@ function Contact() {
             id="email"
             type="email"
             name="email"
+            placeholder="Ingresa tu email de contacto"
             required
           />
         </div>
@@ -117,6 +119,7 @@ function Contact() {
             className="rounded-sm h-32 bg-semitransparent p-2 resize-none"
             name="message"
             id="message"
+            placeholder="Por favor, cuéntanos los detalles de tu consulta."
             required
           ></textarea>
         </div>

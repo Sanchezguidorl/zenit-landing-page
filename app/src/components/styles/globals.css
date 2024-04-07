@@ -18,8 +18,8 @@ body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   color: #fff;
-  background: linear-gradient(rgba(33, 33, 33, 0.3) 10%,
-      rgba(57, 73, 171, 0.3),
+  background: linear-gradient(rgba(33, 33, 33, 0.3),
+      rgba(57, 73, 171, 0.3) 10%,
       rgba(33, 33, 33, 0.3) 50%,
       rgba(33, 33, 33, 0.3) 80%,
       rgba(57, 73, 171, 0.3));
