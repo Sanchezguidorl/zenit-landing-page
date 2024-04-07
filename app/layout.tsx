@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+
 import "./src/components/styles/main.css";
 import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
+import GoogleAdsTag from "./src/components/layouts/GoogleAds";
 
 export const metadata = {
   title: "Zenit- Landing Pages Profesionales para Marcas de Éxito",
@@ -51,6 +52,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <GoogleAdsTag/>
+      </head>
       <body className="">
         <div className="absolute h-full w-full overflow-hidden">
         <BgEffectContainer/>
