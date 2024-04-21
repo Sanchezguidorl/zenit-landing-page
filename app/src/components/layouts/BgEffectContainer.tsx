@@ -21,12 +21,12 @@ function BgEffectContainer() {
         </defs>
       </svg>
       <div className=" gradients-container">
-        <div className="g1" >1</div>
-        <div className="g2" >2</div>
-        <div className="g3" >3</div>
-        <div className="g4" >4</div>
-        <div className="g5" >5</div>
-        <div className="g6" >6</div>
+        <div className="aspect-square g1" >1</div>
+        <div className="aspect-square g2" >2</div>
+        <div className="aspect-square g3" >3</div>
+        <div className="aspect-square g4" >4</div>
+        <div className="aspect-square g5" >5</div>
+        <div className="aspect-square g6" >6</div>
       </div>
     </div>
   );

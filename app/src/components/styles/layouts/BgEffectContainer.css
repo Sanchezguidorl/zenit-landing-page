@@ -2,7 +2,6 @@
 
 :root {
     --color-interactive: 50, 40, 50;
-    --circle-size: 50%;
     --blending: hard-light;
     --blue: 130, 190, 254;
     --purple: 200,80,190;
@@ -72,35 +71,35 @@
 }
 
   .g1{
-    background: radial-gradient(circle at center, rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0) 50%) no-repeat;
+    background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0) 50%) no-repeat;
     mix-blend-mode: var(--blending);
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(80% - var(--circle-size));
-    left: calc(50% - var(--circle-size));
+    width: 90%;
+    height: 90%;
+    top: calc(50% - 90%);
+    left: calc(50% - 90%);
     transform-origin: calc(50% + 200px);
     animation: moveVertical 30s ease infinite;
   }
   
   .g2{
-    background: radial-gradient(circle at center, rgba(var(--blue), 0.8) 0, rgba(var(--purple), 0) 50%) no-repeat;
+    background: radial-gradient( rgba(var(--blue), 0.8) 0, rgba(var(--purple), 0),#00000000 90%) no-repeat;
     mix-blend-mode: var(--blending);
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(60% - var(--circle-size) / 3);
-    left: calc(50% - var(--circle-size) / 3);
+    width: 90%;
+    height: 90%;
+    top: calc(50% - 90% / 3);
+    left: calc(50% - 90% / 3);
     transform-origin: calc(50% + 100px);
     animation: moveHorizontal 20s reverse infinite;
   }
     
       .g3 {
-        background: radial-gradient(circle at center, rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0) 50%) no-repeat;
+        background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0),#00000000 90%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: var(--circle-size);
-        height: var(--circle-size);
-        top: calc(40% - var(--circle-size) / 2 + 200px);
-        left: calc(50% - var(--circle-size) / 2 - 500px);
+        width: 90%;
+        height: 90%;
+        top: calc(50% - 90% / 2 + 200px);
+        left: calc(50% - 90% / 2 - 500px);
     
         transform-origin: calc(50% + 400px);
         animation: moveInCircle 40s linear infinite;
@@ -108,13 +107,13 @@
       }
     
       .g4 {
-        background: radial-gradient(circle at center, rgba(var(--blue), 0.8) 0, rgba(var(--purple), 0) 50%) no-repeat;
+        background: radial-gradient( rgba(var(--blue), 0.8) 0, rgba(var(--purple), 0),#00000000 90%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: var(--circle-size);
-        height: var(--circle-size);
-        top: calc(60% - var(--circle-size) / 2);
-        left: calc(50% - var(--circle-size) / 2);
+        width: 90%;
+        height: 90%;
+        top: calc(50% - 90% / 2);
+        left: calc(50% - 90% / 2);
     
         transform-origin: calc(50% - 200px);
         animation: moveInCircle 40s ease infinite;
@@ -122,26 +121,26 @@
       }
     
       .g5 {
-        background: radial-gradient(circle at center, rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0) 50%) no-repeat;
+        background: radial-gradient(rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0),#00000000 90%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: calc(var(--circle-size) * 2);
-        height: calc(var(--circle-size) * 2);
-        top: calc(20% - var(--circle-size));
-        left: calc(50% - var(--circle-size));
+        width: calc(90% * 2);
+        height: calc(90% * 2);
+        top: calc(50% - 90%);
+        left: calc(50% - 90%);
     
         transform-origin: calc(50% - 800px) calc(50% + 200px);
         animation: moveVertical 20s ease infinite;
     
       }
       .g6 {
-        background: radial-gradient(circle at center, rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0) 50%) no-repeat;
+        background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0), #00000000 90%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: calc(var(--circle-size) * 2);
-        height: calc(var(--circle-size) * 2);
-        top: calc(50% - var(--circle-size));
-        left: calc(50% - var(--circle-size));
+        width: calc(90% * 2);
+        height: calc(90% * 2);
+        top: calc(50% - 90%);
+        left: calc(50% - 90%);
     
         transform-origin: calc(50% - 1500px) calc(50% + 200px);
         animation: moveInCircle 20s ease infinite;

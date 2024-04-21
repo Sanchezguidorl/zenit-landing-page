@@ -113,3 +113,12 @@ input[type="submit"]:hover{
       transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
   }
+
+  input,textarea {
+    transition: all .4s linear;
+  }
+
+  input:focus,textarea:focus{
+    outline: 2px ridge rgba(101, 50, 220, 0.6);
+
+  }

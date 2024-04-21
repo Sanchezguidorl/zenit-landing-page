@@ -4,8 +4,8 @@ import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
 import GoogleAdsTag from "./src/components/layouts/GoogleAds";
 
 export const metadata = {
-  title: "Zenit- Landing Pages Profesionales para Marcas de Éxito",
-  description: "Desarrollamos Landing Pages para Marcas de Alto Valor | SEO y Posicionamiento Web",
+  title: "Páginas web profesionales para marcas de éxito",
+  description: "Desarrollamos Páginas web para marcas de alto valor | SEO y Posicionamiento Web",
   tags: [
       "programador",
       "desarrollador web",
@@ -26,7 +26,10 @@ export const metadata = {
       "Optimización SEO",
       "Posicionamiento Web",
       "SEO Local",
-      "Palabras Clave",
+      "Página web",
+      "Página Web",
+      "Sitio Web",
+      "Sitio web",
       "Backlinks",
       "Diseño Web Responsivo",
       "Experiencia de Usuario",
@@ -41,7 +44,8 @@ export const metadata = {
       "Redes Sociales",
       "Landing Pages para Marcas",
       "Landing Pages de Producto",
-      "Optimización de Conversiones"
+      "Optimización de Conversiones",
+      "Página para negocio"
   ]
 };
 
@@ -63,8 +67,8 @@ export default function RootLayout({
         <div className=" aspect-square border top-96 -right-20 border-no-dark w-96 rounded-full absolute "></div>
         <div className=" aspect-square border top-1/3 -right-40 border-no-dark w-[600px] rounded-full absolute "></div>
         <div className=" aspect-square border top-1/4 right-1/2 border-no-dark w-32 rounded-full absolute "></div>
-        <div className=" aspect-square border top-32 right-1/3 border-no-dark w-28 rounded-full absolute "></div>
-        <div className=" aspect-square border top-3/4 right-1/4 border-no-dark w-28 rounded-full absolute "></div>
+        <div className=" aspect-square border top-32 right-1/3 border-no-dark w-6 sm:w-10 rounded-full absolute "></div>
+        <div className=" aspect-square border top-3/4 right-1/4 border-no-dark w-8  sm:w-16 rounded-full absolute "></div>
         <div className=" aspect-square border top-2/4 right-2/3 border-no-dark w-[400px] rounded-full absolute "></div>
         </div>
         {children}
