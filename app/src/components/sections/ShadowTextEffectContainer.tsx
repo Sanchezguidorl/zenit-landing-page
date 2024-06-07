@@ -8,7 +8,7 @@ function ShadowTextEffectContainer({children}:{children:React.ReactNode}) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowShadow(true);
-    }, 3000);
+    }, 1000);
 
     return () => {
       clearTimeout(timer);

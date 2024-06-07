@@ -16,19 +16,19 @@
         }
 
         .presentation-text-1{
-            animation: presentation-animation 1s ease-in; 
+            animation: presentation-animation 0.3s ease-in; 
         }
         
         .presentation-text-2{
-            animation: presentation-animation 2s ease-in; 
+            animation: presentation-animation 0.6s ease-in; 
         }
         
         .presentation-text-3{
-            animation: presentation-animation 3s ease-in;
+            animation: presentation-animation 0.9s ease-in;
         }
 
         .presentation-text-container{
-            animation: presentation-container-hidden 3s ease-in;
+            overflow: hidden;
         }
     }
 }

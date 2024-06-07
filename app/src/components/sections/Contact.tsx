@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 function Contact() {
   const [successfullSend, setSuccessfullSend] = useState<boolean>(false);

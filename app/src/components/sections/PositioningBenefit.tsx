@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import DoorIcon from '/public/doorIcon.svg';
 import StonksIcon from '/public/stonksIcon.svg';
 import CheckListIcon from '/public/checkListIcon.svg';

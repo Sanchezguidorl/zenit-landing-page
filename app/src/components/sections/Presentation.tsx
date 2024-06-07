@@ -1,4 +1,3 @@
-import React from "react";
 import ShadowTextEffectContainer from "./ShadowTextEffectContainer";
 
 function Presentation() {

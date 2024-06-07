@@ -2,6 +2,8 @@ import "./src/components/styles/main.css";
 import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
 import GoogleAdsTag from "./src/components/layouts/GoogleAds";
 
+
+
 export const metadata = {
   title: "Páginas web profesionales para marcas de éxito",
   description:
@@ -49,6 +51,7 @@ export const metadata = {
   ],
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,7 +60,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <GoogleAdsTag />
       </head>
       <body className="relative">
         <div className="background-container fadeIn">
@@ -76,6 +78,7 @@ export default function RootLayout({
           <div className=" aspect-square border top-2/4 right-2/3 border-no-dark w-[400px] rounded-full absolute "></div>
         </div>
         {children}
+      <GoogleAdsTag />
       </body>
     </html>
   );

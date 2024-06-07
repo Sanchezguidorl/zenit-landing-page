@@ -6,9 +6,9 @@ import ZenitLogo from "/public/zenitLogo.png";
 import CloseIcon from "/public/closeIcon.svg";
 import MenuIcon from "/public/menuIcon.svg";
 import React, { useEffect, useRef, useState } from "react";
+import MenuHeader from "./buttons/MenuHeader";
 function HeaderContent() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [showMenu, setShowMenu] = useState<boolean | null>(null);
+  const [showMenu, setShowMenu] = useState<boolean>(false);
   const responsiveNavRef = useRef<HTMLDivElement>(null);
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -18,29 +18,18 @@ function HeaderContent() {
   };
 
   useEffect(() => {
-    const handleWindowResize = () => {
-      if (window.innerWidth >= 640) {
-        setShowMenu(false);
-      } else {
-        setShowMenu(true);
-      }
-    };
-
     const handleClickOut = (event: MouseEvent) => {
       if (
         responsiveNavRef.current &&
         !responsiveNavRef.current.contains(event.target as Node)
       ) {
-        setIsOpen(false);
+        setShowMenu(false);
       }
     };
 
-    window.addEventListener("resize", handleWindowResize);
-    handleWindowResize()
     document.addEventListener("click", handleClickOut);
 
     return () => {
-      window.removeEventListener("resize", handleWindowResize);
       document.removeEventListener("click", handleClickOut);
     };
   }, []);
@@ -53,30 +42,17 @@ function HeaderContent() {
         <Image src={ZenitLogo} className="aspect-square w-20" alt="" />
       </div>
       <div className="absolute right-10">
-        {showMenu ? (
-          isOpen ? (
-            <Image
-              className="w-12 cursor-pointer opacity-60 transition-opacity duration-200 hover:opacity-100"
-              onClick={() => setIsOpen(false)}
-              src={CloseIcon}
-              alt=" Icono para cerrar el menú"
-            />
-          ) : (
-            <Image
-              className="w-12 cursor-pointer opacity-60 transition-opacity duration-200 hover:opacity-100"
-              onClick={() => setIsOpen(true)}
-              src={MenuIcon}
-              alt=" Icono para abrir el menú"
-            />
-          )
-        ) : (
-          <div></div>
-        )}
+  <div
+  className="w-full px-6 py-4 flex justify-end opacity-80 hover:opacity-100 sm:hidden"
+  onClick={() => setShowMenu(!showMenu)}
+>
+  <MenuHeader isActive={showMenu} />
+</div>
       </div>
       <nav
 
         className={`absolute top-full header-content-container  w-full  transition-all duration-300 sm:hidden overflow-hidden ${
-          isOpen ? "py-3 max-h-[600px] border-b" : "max-h-0 py-0"
+          showMenu ? "py-3 max-h-[600px] border-b" : "max-h-0 py-0"
         }`}
       >
         <ul className="uppercase text-white sm:flex sm:justify-between gap-4">
