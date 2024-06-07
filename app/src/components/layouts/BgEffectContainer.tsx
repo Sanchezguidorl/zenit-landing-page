@@ -4,29 +4,16 @@ function BgEffectContainer() {
     <div className="gradient-bg  z-10 max-w-full">
       <svg xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <filter id="goo">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="10"
-              result="blur"
-              />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-              result="goo"
-              />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
+
         </defs>
       </svg>
       <div className=" gradients-container">
-        <div className="aspect-square g1" >1</div>
-        <div className="aspect-square g2" >2</div>
-        <div className="aspect-square g3" >3</div>
-        <div className="aspect-square g4" >4</div>
-        <div className="aspect-square g5" >5</div>
-        <div className="aspect-square g6" >6</div>
+        <div className="aspect-square g1" ></div>
+        <div className="aspect-square g2" ></div>
+        <div className="aspect-square g3" ></div>
+        <div className="aspect-square g4" ></div>
+        <div className="aspect-square g5" ></div>
+        <div className="aspect-square g6" ></div>
       </div>
     </div>
   );

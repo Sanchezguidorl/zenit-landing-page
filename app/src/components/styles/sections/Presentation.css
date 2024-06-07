@@ -1,18 +1,63 @@
 #Presentation {
     .gradient-mask-container {
-        background: linear-gradient(235deg, #304FFE, #00ACC1, #4A148C);
+        background: linear-gradient(235deg, #304FFE, #06bed6, #7828db);
         max-width: 1100px;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        p,
-        h1 {
-            letter-spacing: 2px;
+        
+        p{
+            letter-spacing: 2px;  
         }
 
-        h1{
-            background: radial-gradient(#657cff21 10%, #00000000 60%);
+        .shadow-text-animation{
+            text-shadow:4px 8px 10px #b969ffa7;
+            animation: presentation-shadow 1s ease-in; 
+        }
+
+        .presentation-text-1{
+            animation: presentation-animation 1s ease-in; 
+        }
+        
+        .presentation-text-2{
+            animation: presentation-animation 2s ease-in; 
+        }
+        
+        .presentation-text-3{
+            animation: presentation-animation 3s ease-in;
+        }
+
+        .presentation-text-container{
+            animation: presentation-container-hidden 3s ease-in;
         }
     }
 }
+
+@keyframes presentation-animation {
+    0%{
+        opacity: 0;
+        transform: translateY(110%)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes presentation-shadow {
+    0%{
+        text-shadow:0px 5px 5px #00000000;
+    }
+    100%{
+        text-shadow:4px 8px 10px #b969ffa7;
+    }
+}
+
+@keyframes presentation-container-hidden {
+    0%{
+        overflow: hidden;
+    }
+    100%{
+        overflow: hidden;
+    }
+}
+

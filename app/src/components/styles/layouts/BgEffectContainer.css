@@ -67,82 +67,82 @@
 .g1,.g2,.g3,.g4,.g5, .g6{
   position: absolute;
   border-radius: 50%;
-  opacity: 0.15;
+  opacity: 0.30;
 }
 
   .g1{
-    background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0) 50%) no-repeat;
+    background: radial-gradient( rgba(circle,var(--purple), 0.8) 0, rgba(var(--blue), 0) 15%,#00000000 60%) no-repeat;
     mix-blend-mode: var(--blending);
-    width: 90%;
-    height: 90%;
-    top: calc(50% - 90%);
-    left: calc(50% - 90%);
+    width: 100%;
+    height: 100%;
+    top: calc(10%);
+    left: 0;
     transform-origin: calc(50% + 200px);
-    animation: moveVertical 30s ease infinite;
+    animation: moveVertical 90s ease infinite;
   }
   
   .g2{
-    background: radial-gradient( rgba(var(--blue), 0.8) 0, rgba(var(--purple), 0),#00000000 90%) no-repeat;
+    background: radial-gradient( rgba(var(--blue), 0.8) 0, rgba(var(--purple), 15%),#00000000 90%) no-repeat;
     mix-blend-mode: var(--blending);
-    width: 90%;
-    height: 90%;
-    top: calc(50% - 90% / 3);
-    left: calc(50% - 90% / 3);
+    width: 100%;
+    height: 100%;
+    top: calc(30%);
+    left: calc(50% - 90%);
     transform-origin: calc(50% + 100px);
-    animation: moveHorizontal 20s reverse infinite;
+    animation: moveHorizontal 90s reverse infinite;
   }
     
       .g3 {
-        background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0),#00000000 90%) no-repeat;
+        background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 15%),#00000000 60%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: 90%;
-        height: 90%;
-        top: calc(50% - 90% / 2 + 200px);
-        left: calc(50% - 90% / 2 - 500px);
+        width: 100%;
+        height: 100%;
+        top: calc(50% - 90% / 2);
+        left: calc(50% - 90% / 2);
     
         transform-origin: calc(50% + 400px);
-        animation: moveInCircle 40s linear infinite;
+        animation: moveInCircle 90s linear infinite;
     
       }
     
       .g4 {
-        background: radial-gradient( rgba(var(--blue), 0.8) 0, rgba(var(--purple), 0),#00000000 90%) no-repeat;
+        background: radial-gradient( rgba(var(--blue), 0.8) 0, rgba(var(--purple), 15%),#00000000 60%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: 90%;
-        height: 90%;
-        top: calc(50% - 90% / 2);
+        width: 200%;
+        height: 200%;
+        top: calc(5%);
         left: calc(50% - 90% / 2);
     
         transform-origin: calc(50% - 200px);
-        animation: moveInCircle 40s ease infinite;
+        animation: moveInCircle 90s ease infinite;
     
       }
     
       .g5 {
-        background: radial-gradient(rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0),#00000000 90%) no-repeat;
+        background: radial-gradient(rgba(var(--purple), 0.8) 0, rgba(var(--blue), 15%),#00000000 60%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: calc(90% * 2);
-        height: calc(90% * 2);
-        top: calc(50% - 90%);
+        width: 200%;
+        height: 200%;
+        top: calc(10%);
         left: calc(50% - 90%);
     
         transform-origin: calc(50% - 800px) calc(50% + 200px);
-        animation: moveVertical 20s ease infinite;
+        animation: moveVertical 90s ease infinite;
     
       }
       .g6 {
-        background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 0), #00000000 90%) no-repeat;
+        background: radial-gradient( rgba(var(--purple), 0.8) 0, rgba(var(--blue), 15%), #00000000 60%) no-repeat;
         mix-blend-mode: var(--blending);
     
-        width: calc(90% * 2);
-        height: calc(90% * 2);
+        width: 200%;
+        height: 200%;
         top: calc(50% - 90%);
         left: calc(50% - 90%);
     
         transform-origin: calc(50% - 1500px) calc(50% + 200px);
-        animation: moveInCircle 20s ease infinite;
+        animation: moveInCircle 90s ease infinite;
     
       }
