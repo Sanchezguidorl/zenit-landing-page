@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import UpIcon from '/public/upIcon.svg';
+import '../styles/sections/Benefits.css';
 
 function Benefits() {
   return (
