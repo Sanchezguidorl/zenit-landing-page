@@ -66,7 +66,7 @@ export default function RootLayout({
       <body className="relative">
         <div className="background-container fadeIn">
           <div className="stars"></div>
-          <Image src={Twinkling} alt="" className="twinkling"/>
+          <Image src={Twinkling} priority alt="" className="twinkling"/>
         </div>
         <div className="absolute h-full w-full overflow-hidden">
           <BgEffectContainer />
