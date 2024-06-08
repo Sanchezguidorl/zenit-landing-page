@@ -62,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preload" href="main.css" as="style"/>
       </head>
       <body className="relative">
         <div className="background-container fadeIn">
