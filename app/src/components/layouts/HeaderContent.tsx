@@ -2,10 +2,8 @@
 
 import Image from "next/image";
 
-import ZenitLogo from "/public/zenitLogo.png";
-import CloseIcon from "/public/closeIcon.svg";
-import MenuIcon from "/public/menuIcon.svg";
-import React, { useEffect, useRef, useState } from "react";
+import CygnusLogo from "/public/cygnusLogo.svg";
+import { useEffect, useRef, useState } from "react";
 import MenuHeader from "./buttons/MenuHeader";
 function HeaderContent() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -39,7 +37,7 @@ function HeaderContent() {
     ref={responsiveNavRef}
     className="flex justify-center sm:justify-between w-full px-8 text-center text-xs sm:text-md container items-center mx-auto relative">
       <div>
-        <Image src={ZenitLogo} className="aspect-square w-20" alt="" />
+        <Image src={CygnusLogo} className="aspect-square w-20" alt="Logo del sitio" />
       </div>
       <div className="absolute right-10">
   <div

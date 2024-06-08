@@ -1,6 +1,8 @@
 import "./src/components/styles/main.css";
 import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
 import GoogleAdsTag from "./src/components/layouts/GoogleAds";
+import Image from "next/image";
+import Twinkling from '/public/twinkling.svg';
 
 
 
@@ -64,7 +66,7 @@ export default function RootLayout({
       <body className="relative">
         <div className="background-container fadeIn">
           <div className="stars"></div>
-          <div className="twinkling"></div>
+          <Image src={Twinkling} alt="" className="twinkling"/>
         </div>
         <div className="absolute h-full w-full overflow-hidden">
           <BgEffectContainer />
