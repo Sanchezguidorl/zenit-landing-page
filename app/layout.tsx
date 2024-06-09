@@ -1,4 +1,4 @@
-
+import "./globals.css"
 import BgStars from "./src/components/layouts/BgStars";
 import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
 import GoogleAdsTag from "./src/components/layouts/GoogleAds";
@@ -61,9 +61,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="preload" href="/globals.css" as="style" />
-      <link rel="preload" href="/Header.css" as="style" />
-      <link rel="preload" href="/Presentation.css" as="style" />
+        <link rel="stylesheet" href="/Header.css" />
+        <link rel="stylesheet" href="/Presentation.css" />
       </head>
       <body className="relative">
         <BgStars/>
