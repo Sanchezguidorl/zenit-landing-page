@@ -2,19 +2,21 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./app/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      dark: "#212121",
+    colors:{
+      "dark": "#212121",
       "no-dark": "#5C5C5C",
-      secondary: "#00ACC1",
-      blue: "#304FFE",
+      "secondary": "#00ACC1",
+      "blue": "#304FFE",
       "dark-blue": "#3949AB",
-      purple: "#4A148C",
-      white: "#ffffffcc",
-      transparent: "#00000000",
+      "purple": "#4A148C",
+      "white": "#ffffffcc",
+      "transparent": "#00000000",
+
     },
     extend: {
       backgroundImage: {

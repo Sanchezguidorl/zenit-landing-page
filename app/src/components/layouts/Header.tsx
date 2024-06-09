@@ -10,6 +10,7 @@ function Header() {
       <HeaderContent/>
     </header>
   );
-}
-
-export default Header;
+  }
+  
+  export default Header;
+  

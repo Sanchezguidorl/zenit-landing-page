@@ -1,6 +1,6 @@
-import Image from "next/image";
-import DesignsImg from "/public/responsiveDesign.webp";
 import '../styles/sections/OurServices.css';
+import DesignsImg from "/public/responsiveDesign.webp";
+import Image from "next/image";
 function OurService() {
   return (
     <section className="flex flex-col lg:flex-row flex-wrap py-20 border-b border-b-no-dark border-t border-t-no-dark" id="OurService">

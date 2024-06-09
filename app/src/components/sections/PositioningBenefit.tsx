@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import DoorIcon from '/public/doorIcon.svg';
 import StonksIcon from '/public/stonksIcon.svg';
 import CheckListIcon from '/public/checkListIcon.svg';
+import Image from 'next/image'
 
 function PositioningBenefit({children, iconIndex, positionDiv }: { iconIndex: number, positionDiv: string, children:React.ReactNode }) {
 

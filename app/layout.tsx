@@ -1,7 +1,7 @@
 import "./src/components/styles/globals.css";
+import BgStars from "./src/components/layouts/BgStars";
 import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
 import GoogleAdsTag from "./src/components/layouts/GoogleAds";
-import BgStars from "./src/components/layouts/BgStars";
 
 
 
