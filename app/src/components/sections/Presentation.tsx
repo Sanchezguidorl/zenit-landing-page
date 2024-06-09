@@ -1,5 +1,4 @@
 import "../../../styles/sections/Presentation.css";
-import ShadowTextEffectContainer from "./ShadowTextEffectContainer";
 
 function Presentation() {
   return (
@@ -10,23 +9,21 @@ function Presentation() {
             ELEVA TU PRESENCIA ONLINE
           </p>
         </div>
-        <ShadowTextEffectContainer>
           <div className="presentation-text">
-            <p className=" relative text-2xl  sm:text-5xl lg:text-6xl font-bold words-presentation presentation-text-1">
+            <p className=" relative text-2xl  sm:text-5xl lg:text-6xl font-bold words-presentation presentation-text-1 shadow-text-presentation">
               DONDE LA EXCELENCIA SE
             </p>
           </div>
           <div className=" presentation-text">
-            <p className="relative text-2xl sm:text-5xl lg:text-6xl font-bold presentation-text-2">
+            <p className="relative text-2xl sm:text-5xl lg:text-6xl font-bold presentation-text-2 shadow-text-presentation">
               POSICIONA Y EL DISEÑO SE
             </p>
           </div>
           <div className=" presentation-text">
-            <p className="relative text-2xl  sm:text-5xl lg:text-6xl font-bold presentation-text-3">
+            <p className="relative text-2xl  sm:text-5xl lg:text-6xl font-bold presentation-text-3 shadow-text-presentation">
               EXPERIMENTA
             </p>
           </div>
-          </ShadowTextEffectContainer>
       </h1>
     </section>
   );
