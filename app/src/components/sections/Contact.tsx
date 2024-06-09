@@ -1,5 +1,5 @@
 "use client";
-import '../styles/sections/Contact.css';
+import '../../../styles/sections/Contact.css';
 import { useRef, useState } from "react";
 
 function Contact() {

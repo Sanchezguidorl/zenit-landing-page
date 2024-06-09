@@ -1,4 +1,3 @@
-import "../styles/layouts/Header.css";
 import HeaderContent from "./HeaderContent";
 
 

@@ -1,4 +1,4 @@
-import '../styles/sections/OurServices.css';
+import '../../../styles/sections/OurServices.css';
 import Image from "next/image";
 import DesignsImg from "/public/responsiveDesign.webp";
 function OurService() {

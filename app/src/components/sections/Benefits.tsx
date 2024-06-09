@@ -1,4 +1,4 @@
-import '../styles/sections/Benefits.css';
+import '../../../styles/sections/Benefits.css';
 import Image from 'next/image';
 import UpIcon from '/public/upIcon.svg';
 

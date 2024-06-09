@@ -1,4 +1,4 @@
-import '../styles/sections/Positioning.css';
+import '../../../styles/sections/Positioning.css';
 import Image from "next/image";
 import ShipIcon from "/public/shipIcon.svg";
 import PositioningBenefit from "./PositioningBenefit";
