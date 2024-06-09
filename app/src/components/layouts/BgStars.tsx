@@ -5,7 +5,7 @@ function BgStars() {
   return (
     <div className="background-container fadeIn">
     <div className="stars"></div>
-    <Image src={Twinkling} priority alt="" className="twinkling"/>
+    <Image src={Twinkling} alt="" className="twinkling"/>
   </div>
   )
 }
