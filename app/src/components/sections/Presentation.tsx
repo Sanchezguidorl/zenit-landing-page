@@ -1,4 +1,4 @@
-
+import "../../../styles/sections/Presentation.css";
 import ShadowTextEffectContainer from "./ShadowTextEffectContainer";
 
 function Presentation() {

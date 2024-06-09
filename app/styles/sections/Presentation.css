@@ -7,7 +7,6 @@
 
         .shadow-text-animation{
             text-shadow:4px 8px 10px #b969ffa7;
-            animation: presentation-shadow 1s ease-in; 
         }
 
         .presentation-text-1{
