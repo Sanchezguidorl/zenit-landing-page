@@ -61,6 +61,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preload" href="/Header.css" />
+        <link rel="preload" href="/Presentation.css" />
         <link rel="stylesheet" href="/Header.css" />
         <link rel="stylesheet" href="/Presentation.css" />
       </head>
