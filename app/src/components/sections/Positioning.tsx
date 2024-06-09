@@ -9,6 +9,7 @@ function Positioning() {
       <div className="flex flex-col mx-auto w-fit items-center mb-28 ">
         <Image
           src={ShipIcon}
+          priority
           alt="Icono de nave espacial"
           className=" w-28 text-white"
         />
