@@ -1,7 +1,7 @@
 import '../styles/sections/Positioning.css';
-import PositioningBenefit from "./PositioningBenefit";
-import ShipIcon from "/public/shipIcon.svg";
 import Image from "next/image";
+import ShipIcon from "/public/shipIcon.svg";
+import PositioningBenefit from "./PositioningBenefit";
 
 function Positioning() {
   return (

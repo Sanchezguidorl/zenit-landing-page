@@ -1,9 +1,9 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import MenuHeader from "./buttons/MenuHeader";
 import CygnusLogo from "/public/cygnusLogo.svg";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 function HeaderContent() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const responsiveNavRef = useRef<HTMLDivElement>(null);

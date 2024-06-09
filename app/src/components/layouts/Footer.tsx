@@ -1,8 +1,8 @@
 import Image from "next/image"
+import Link from "next/link";
 import LinkedinIcon from "/public/linkedinIcon.svg";
 import WhatsappIcon from "/public/whatsappIcon.svg";
 import InstagramIcon from "/public/instagramIcon.svg";
-import Link from "next/link";
 
 function Footer() {
   return (
