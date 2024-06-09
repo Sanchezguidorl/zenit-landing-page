@@ -10,7 +10,7 @@ function Presentation() {
           </p>
         </div>
           <div className="presentation-text">
-            <p className=" relative text-2xl  sm:text-5xl lg:text-6xl font-bold words-presentation presentation-text-1 shadow-text-presentation">
+            <p className=" relative text-2xl  sm:text-5xl lg:text-6xl font-bold presentation-text-1 shadow-text-presentation">
               DONDE LA EXCELENCIA SE
             </p>
           </div>

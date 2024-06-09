@@ -1,6 +1,5 @@
 #Presentation {
     .presentation-text-container {
-        
         .shadow-text-presentation{
             text-shadow:4px 8px 10px #b969ffa7;
         }
@@ -22,6 +21,12 @@
         }
     }
 }
+.gradient-mask-silver {
+    background: linear-gradient(180deg, #fff 50%, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 @keyframes presentation-animation {
     0%{
@@ -33,13 +38,3 @@
         transform: translateY(0);
     }
 }
-
-@keyframes presentation-container-hidden {
-    0%{
-        overflow: hidden;
-    }
-    100%{
-        overflow: hidden;
-    }
-}
-
