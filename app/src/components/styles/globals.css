@@ -17,11 +17,6 @@ body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   color: #fff;
-  background: linear-gradient(rgba(33, 33, 33, 0.3),
-      rgba(57, 73, 171, 0.3) 10%,
-      rgba(33, 33, 33, 0.3) 50%,
-      rgba(33, 33, 33, 0.3) 80%,
-      rgba(57, 73, 171, 0.3));
   background-color: #212121;
 }
 
@@ -70,82 +65,4 @@ body {
 
 .fadeIn {
   animation: opacityIn 2s forwards;
-}
-
-
-
-@keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-
-  to {
-    -webkit-transform: translate3d(100%, 0px, 0px);
-  }
-}
-
-@-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-
-  to {
-    -webkit-transform: translate3d(100%, 0px, 0px);
-  }
-}
-
-@-moz-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-
-  to {
-    -webkit-transform: translate3d(100%, 0px, 0px);
-  }
-}
-
-@-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-
-  to {
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-.background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.stars {
-  background: rgb(0, 0, 0) url("/stars.png") repeat;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: block;
-  z-index: -1;
-}
-
-.twinkling {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-
-  -moz-animation: move-background 80s linear infinite;
-  -ms-animation: move-background 80s linear infinite;
-  -o-animation: move-background 80s linear infinite;
-  -webkit-animation: move-background 80s linear infinite;
-  animation: move-background 80s linear infinite;
-
 }

@@ -1,10 +1,5 @@
 #Presentation {
-    .gradient-mask-container {
-        background: linear-gradient(235deg, #304FFE, #06bed6, #7828db);
-        max-width: 1100px;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .presentation-text-container {
         
         p{
             letter-spacing: 2px;  
@@ -27,7 +22,7 @@
             animation: presentation-animation 0.9s ease-in;
         }
 
-        .presentation-text-container{
+        .presentation-text{
             overflow: hidden;
         }
     }

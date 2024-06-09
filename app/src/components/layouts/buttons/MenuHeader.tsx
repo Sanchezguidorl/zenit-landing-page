@@ -1,4 +1,4 @@
-
+import "../../styles/layouts/MenuAnimatedButton.css";
 function MenuHeader({isActive}:{isActive:boolean}) {
     return (
       <div className="menu">

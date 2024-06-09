@@ -1,4 +1,4 @@
-
+import "../styles/layouts/BgEffectContainer.css"
 function BgEffectContainer() {
   return (
     <div className="gradient-bg  z-10 max-w-full">
