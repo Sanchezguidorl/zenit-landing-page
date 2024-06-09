@@ -35,12 +35,12 @@ function HeaderContent() {
   return (
     <div
       ref={responsiveNavRef}
-      className="flex justify-center sm:justify-between flex-wrap w-full px-8 text-center text-xs sm:text-md container items-center mx-auto relative"
+      className="flex justify-center sm:justify-between flex-wrap sm:flex-nowrap w-full px-8 text-center text-xs sm:text-md container items-center mx-auto relative"
     >
-      <div>
+      <div className="w-20">
         <Image
           src={CygnusLogo}
-          className="aspect-square w-20"
+          className="aspect-square"
           alt="Logo del sitio"
         />
       </div>
@@ -53,7 +53,7 @@ function HeaderContent() {
         </div>
       </div>
       <nav
-        className={`absolute top-full header-content-container  w-full  transition-all duration-300 sm:hidden overflow-hidden ${
+        className={`absolute top-full header-content-container transition-all duration-300 sm:hidden overflow-hidden ${
           showMenu ? "py-3 max-h-[600px] border-b" : "max-h-0 py-0"
         }`}
       >
@@ -84,8 +84,8 @@ function HeaderContent() {
           </li>
         </ul>
       </nav>
-      <nav className="hidden sm:block">
-        <ul className="uppercase text-white sm:flex sm:justify-between gap-4">
+      <nav className="hidden sm:block text-nowrap">
+        <ul className="uppercase text-white flex sm:justify-between gap-4">
           <li
             className="cursor-pointer "
             onClick={() => scrollToSection("Positioning")}
@@ -93,7 +93,7 @@ function HeaderContent() {
             Posicionamiento
           </li>
           <li
-            className="cursor-pointer "
+            className="cursor-pointer"
             onClick={() => scrollToSection("OurService")}
           >
             NUESTRO SERVICIO

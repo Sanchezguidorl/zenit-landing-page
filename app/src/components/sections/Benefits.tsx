@@ -31,9 +31,9 @@ function Benefits() {
         </div>
       </div>
       <div className="w-full sm:w-1/2 relative flex items-center justify-center h-[400px] ">
-        <Image src={UpIcon} alt="asdsad" className=' text-secondary absolute w-12'/>
-        <div className=" border border-y-dark-blue h-52 w-52 rounded-full absolute  bg-transparent benefit" ></div>
-        <div className=" border border-x-purple h-52 w-52 rounded-full absolute bg-transparent benefit-2" ></div>
+        <Image src={UpIcon} alt="" className=' text-secondary absolute w-12'/>
+        <div className=" border border-y-blue h-52 w-52 rounded-full absolute  bg-transparent benefit" ></div>
+        <div className=" border border-x-secondary h-52 w-52 rounded-full absolute bg-transparent benefit-2" ></div>
       </div>
     </div>
   );
