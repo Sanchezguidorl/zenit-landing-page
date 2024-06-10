@@ -5,8 +5,8 @@ import Twinkling from '/public/twinkling.svg';
 function BgStars() {
   return (
     <div className="background-container fadeIn">
-    <Image src={Stars} alt='' priority loading='eager' sizes="(max-width: 430px) 400px" quality={5} className="stars"/>
-    <Image src={Twinkling} alt="" priority sizes="(max-width: 430px) 400px" quality={5} className="twinkling"/>
+    <Image src={Stars} alt='' layout="responsive" priority sizes="(max-width: 430px) 400px, 100vw" quality={2} className="stars"/>
+    <Image src={Twinkling} alt="" layout="responsive" priority sizes="(max-width: 430px) 400px, 100vw" quality={2} className="twinkling"/>
   </div>
   )
 }
