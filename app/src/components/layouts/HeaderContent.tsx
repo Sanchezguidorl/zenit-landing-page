@@ -37,6 +37,7 @@ function HeaderContent() {
     >
       <div className="w-20">
         <Image
+          loading="eager"
           src={CygnusLogo}
           className="aspect-square"
           alt="Logo del sitio"
