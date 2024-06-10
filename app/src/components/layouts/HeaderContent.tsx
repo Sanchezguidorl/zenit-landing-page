@@ -43,16 +43,16 @@ function HeaderContent() {
           alt="Logo del sitio"
         />
       </div>
-      <div className="top-full w-full">
+      <div className="w-full">
         <div
-          className="w-full px-6 py-4 flex justify-end opacity-80 hover:opacity-100 sm:hidden"
+          className="w-full px-6 py-4 flex justify-center opacity-80 hover:opacity-100 sm:hidden"
           onClick={() => setShowMenu(!showMenu)}
         >
           <MenuHeader isActive={showMenu} />
         </div>
       </div>
       <nav
-        className={`absolute top-full header-content-container transition-all duration-300 sm:hidden overflow-hidden ${
+        className={`absolute top-full header-content-container transition-all w-full duration-300 sm:hidden overflow-hidden ${
           showMenu ? "py-3 max-h-[600px] border-b" : "max-h-0 py-0"
         }`}
       >

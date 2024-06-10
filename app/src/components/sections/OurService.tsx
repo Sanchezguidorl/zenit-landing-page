@@ -3,8 +3,8 @@ import Image from "next/image";
 import DesignsImg from "/public/responsiveDesign.webp";
 function OurService() {
   return (
-    <section className="flex flex-col lg:flex-row flex-wrap py-20 border-b border-b-no-dark border-t border-t-no-dark" id="OurService">
-      <div className="w-full lg:w-1/2">
+    <section className=" flex flex-col lg:flex-row flex-wrap items-center py-20 border-b border-b-no-dark border-t border-t-no-dark" id="OurService">
+      <div className="w-full lg:w-1/2 flex justify-center">
         <Image src={DesignsImg} sizes="(max-width: 430px) 400px" loading="lazy" id="DesignsImage" alt="Imagen de diseños de sitios web en diferentes dispositivos" />
       </div>
       <div className="lg:w-1/2 px-4 text-white">
