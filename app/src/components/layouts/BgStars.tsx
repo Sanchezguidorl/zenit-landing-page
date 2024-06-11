@@ -9,7 +9,7 @@ function BgStars() {
         src={Stars}
         alt=""
         priority
-        sizes="(max-width: 430px) 400px, 100vw"
+        sizes="(max-width: 430px) 400px"
         quality={2}
         className="stars"
       />
@@ -17,7 +17,7 @@ function BgStars() {
         src={Twinkling}
         alt=""
         priority
-        sizes="(max-width: 430px) 400px, 100vw"
+        sizes="(max-width: 430px) 400px"
         quality={2}
         className="twinkling"
       />

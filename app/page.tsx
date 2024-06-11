@@ -5,6 +5,7 @@ import OurService from "./src/components/sections/OurService";
 import Footer from "./src/components/layouts/Footer";
 import Benefits from "./src/components/sections/Benefits";
 import Contact from "./src/components/sections/Contact";
+import Services from "./styles/sections/Services";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         <Presentation />
         <Positioning />
         <OurService />
+        <Services />
         <Benefits />
         <Contact />
         <Footer />
