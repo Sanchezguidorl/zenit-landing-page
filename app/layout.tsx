@@ -7,7 +7,7 @@ export const metadata = {
   title: "Páginas web profesionales para marcas de éxito",
   description:
     "Desarrollamos Páginas web para marcas de alto valor | SEO y Posicionamiento Web",
-  tags: [
+  keywords: [
     "programador",
     "desarrollador web",
     "WordPress",
@@ -47,6 +47,8 @@ export const metadata = {
     "Landing Pages de Producto",
     "Optimización de Conversiones",
     "Página para negocio",
+    "Community manager",
+    "Community management"
   ],
 };
 
