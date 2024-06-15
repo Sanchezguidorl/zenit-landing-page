@@ -1,6 +1,6 @@
 import '../../../../styles/sections/OurServices.css';
 import Image from "next/image";
-import SocialMediaManagementImg from '/public/ecommerce.png';
+import SocialMediaManagementImg from '/public/ecommerce.webp';
 function SocialMediaManagement() {
   return (
     <section className=" flex flex-col lg:flex-row-reverse flex-wrap items-center py-20" id="OurService">

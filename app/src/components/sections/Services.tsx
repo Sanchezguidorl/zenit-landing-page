@@ -7,9 +7,6 @@ import Inventary from './services/Inventary';
 import Landingpage from './services/Landingpage';
 import SocialMediaManagement from './services/SocialMediaManagemet';
 
-// Carga dinámica del componente OurService
-const OurService = dynamic(() => import('@/app/src/components/sections/OurService'), { ssr: false });
-
 function Services() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -18,7 +15,6 @@ function Services() {
     { component: <Landingpage />, key: 'ourService' },
     { component: <Inventary />, key: 'migrations1' },
     { component: <Migrations />, key: 'migrations2' },
-    { component: <OurService />, key: 'ourService2' },
     { component: <SocialMediaManagement />, key: 'migrations3' }
   ];
 

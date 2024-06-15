@@ -1,6 +1,6 @@
 import '../../../../styles/sections/OurServices.css';
 import Image from "next/image";
-import InventaryImg from '/public/inventary.png';
+import InventaryImg from '/public/gestionInventarioImage.webp';
 function Inventary() {
   return (
     <section className=" flex flex-col lg:flex-row-reverse flex-wrap items-center py-20" id="OurService">

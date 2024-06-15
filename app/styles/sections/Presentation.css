@@ -1,25 +1,25 @@
 #Presentation {
-    .presentation-text-container {
         .shadow-text-presentation{
-            text-shadow:4px 8px 10px #b969ffa7;
+            animation: presentation-shadow-animation 1s ease-in;
+            text-shadow:4px 8px 20px #c27dffcd;
         }
 
         .presentation-text-1{
-            animation: presentation-animation 0.3s ease-in; 
+            animation: presentation-animation 0.6s ease-in;
         }
         
         .presentation-text-2{
-            animation: presentation-animation 0.6s ease-in; 
+            animation: presentation-animation 1.2s ease-in;  
         }
         
         .presentation-text-3{
-            animation: presentation-animation 0.9s ease-in;
+            animation: presentation-animation 1.8s ease-in;
         }
 
         .presentation-text{
             overflow: hidden;
+            animation: presentation-hidden 1.8s ease-in;
         }
-    }
 }
 .gradient-mask-silver {
     background: linear-gradient(180deg, #fff 50%, #333);
@@ -36,5 +36,21 @@
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes presentation-hidden {
+    0%{
+  overflow: hidden;
+    }
+    100%{
+        overflow: hidden;
+    }
+}
+@keyframes presentation-shadow-animation{
+    0%{
+        text-shadow:-10px 0px 30px #b969ff00;
+    }
+    100%{
+        text-shadow:4px 8px 20px #c27dffcd;
     }
 }
