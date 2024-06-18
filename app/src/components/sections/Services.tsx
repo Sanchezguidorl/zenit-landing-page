@@ -44,7 +44,7 @@ function Services() {
           <div
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-3 h-3 rounded-full cursor-pointer bg-white transition-opacity duration-300 z-10 ${
+            className={`w-3 h-3 rounded-full   bg-white transition-opacity duration-300 z-10 ${
               currentSlide === index ? ' opacity-100' : ' opacity-50'
             }`}
           ></div>

@@ -16,7 +16,7 @@ return ()=>{
 }
     },[]);
   return (
-    <h1 className={`${showEffect && "shadow-text-presentation"} mx-auto py-20 pt-60 px-4`}>
+    <h1 className={`${showEffect && "shadow-text-presentation"} mb-8 pt-60`}>
       {children}
     </h1>
   )

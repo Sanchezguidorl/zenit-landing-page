@@ -58,25 +58,25 @@ function HeaderContent() {
       >
         <ul className="uppercase text-white sm:flex sm:justify-between gap-4">
           <li
-            className="py-2 cursor-pointer"
+            className="py-2  "
             onClick={() => scrollToSection("Positioning")}
           >
             Posicionamiento
           </li>
           <li
-            className="py-2 cursor-pointer"
+            className="py-2  "
             onClick={() => scrollToSection("OurService")}
           >
             NUESTRO SERVICIO
           </li>
           <li
-            className="py-2 cursor-pointer"
+            className="py-2  "
             onClick={() => scrollToSection("Benefits")}
           >
             BENEFICIOS
           </li>
           <li
-            className="py-2 cursor-pointer"
+            className="py-2  "
             onClick={() => scrollToSection("Contact")}
           >
             CONTACTO
@@ -86,25 +86,25 @@ function HeaderContent() {
       <nav className="hidden sm:block text-nowrap">
         <ul className="uppercase text-white flex sm:justify-between gap-4">
           <li
-            className="cursor-pointer "
+            className="  "
             onClick={() => scrollToSection("Positioning")}
           >
             Posicionamiento
           </li>
           <li
-            className="cursor-pointer"
+            className=" "
             onClick={() => scrollToSection("OurService")}
           >
             NUESTRO SERVICIO
           </li>
           <li
-            className="cursor-pointer "
+            className="  "
             onClick={() => scrollToSection("Benefits")}
           >
             BENEFICIOS
           </li>
           <li
-            className="cursor-pointer "
+            className="  "
             onClick={() => scrollToSection("Contact")}
           >
             CONTACTO

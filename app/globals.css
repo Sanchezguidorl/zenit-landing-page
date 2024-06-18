@@ -12,10 +12,15 @@
   }
 }
 
-
 body {
+  overflow-x: hidden;
   position: relative;
   color: #fff;
+}
+
+.cursor-div{
+  border: 21px solid;
+  mix-blend-mode: difference;
 }
 
 .gradient-mask-silver {
@@ -63,4 +68,21 @@ body {
 
 .fadeIn {
   animation: opacityIn 1s forwards;
+}
+
+@media (width > 650px) {
+
+  *{
+    cursor: none !important;
+  }
+}
+
+.bg-gradient-action{
+  background: linear-gradient(356deg, rgb(100, 88, 171), rgba(107,12,172,1), rgb(105, 140, 246)); 
+}
+
+
+.image-perspective{
+  transform: rotateX(0deg) rotateY(43deg);
+  transform-style: preserve-3d;
 }

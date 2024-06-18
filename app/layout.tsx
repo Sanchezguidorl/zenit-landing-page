@@ -2,6 +2,7 @@ import "./globals.css";
 import BgStars from "./src/components/layouts/BgStars";
 import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
 import Planets from "./src/components/layouts/Planets";
+import CursorCustom from "./src/components/layouts/CursorCustom";
 
 export const metadata = {
   title: "Páginas web profesionales para marcas de éxito",
@@ -59,13 +60,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="relative">
+      <body className="relative h-fit">
         <BgStars />
         <div className="absolute h-full w-full overflow-hidden">
           <BgEffectContainer />
           <Planets />
         </div>
         {children}
+        <CursorCustom/>
       </body>
     </html>
   );
