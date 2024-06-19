@@ -19,7 +19,7 @@ function CursorCustom() {
 
   useEffect(() => {
     const isTouchDevice = () => {
-      return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+      return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     };
 
     if (!isTouchDevice() && window.innerWidth > 650) {
@@ -43,15 +43,17 @@ function CursorCustom() {
 
       document.addEventListener('mousemove', handleCursorPosition);
 
-      const interactableElements = document.querySelectorAll('input, button, a, .linkToSection, textarea');
-      interactableElements.forEach(el => {
+      const interactableElements = document.querySelectorAll(
+        'input, button, a, .linkToSection, textarea'
+      );
+      interactableElements.forEach((el) => {
         el.addEventListener('mouseenter', handleMouseEnter);
         el.addEventListener('mouseleave', handleMouseLeave);
       });
 
       return () => {
         document.removeEventListener('mousemove', handleCursorPosition);
-        interactableElements.forEach(el => {
+        interactableElements.forEach((el) => {
           el.removeEventListener('mouseenter', handleMouseEnter);
           el.removeEventListener('mouseleave', handleMouseLeave);
         });
@@ -62,7 +64,9 @@ function CursorCustom() {
   return (
     <div
       ref={cursorRef}
-      className={`aspect-square absolute z-40  rounded-full cursor-div  ${isHovering ? 'w-16' : 'w-6'}`}
+      className={`aspect-square absolute z-40 rounded-full cursor-div ${
+        isHovering ? 'w-16' : 'w-6'
+      }`}
       style={{
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
@@ -70,10 +74,9 @@ function CursorCustom() {
         pointerEvents: 'none',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
       }}
-    >
-    </div>
+    ></div>
   );
 }
 
