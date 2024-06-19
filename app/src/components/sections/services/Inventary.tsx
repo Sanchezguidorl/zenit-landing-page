@@ -10,39 +10,30 @@ function Inventary() {
       <div className="lg:w-1/2 px-4 text-white">
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">Diseño a medida</h2>
+            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">Sistemas de gestión de inventario</h2>
           </div>
           <p className=" font-semibold">
-            Nos especializamos en diseños únicos que capturan la esencia de tu
-            negocio. Cada página está meticulosamente adaptada para reflejar tu
-            identidad distintiva, creando una experiencia visual que cautiva
-            desde el primer momento
+          Nuestra solución de gestión de inventario y punto de venta se adapta a las necesidades específicas de tu negocio. Simplifica tareas, optimiza tu inventario y reduce costos, asegurando siempre tener los productos que tus clientes desean
           </p>
         </div>
         <div className="mb-8">
           <div className="gradient-mask-silver">
             <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
-              Experiencia de usuario mejorada
+            Seguridad y control
             </h2>
           </div>
           <p className=" font-semibold">
-            Priorizamos la comodidad del usuario. Creamos diseños intuitivos y
-            atractivos que guían a tus visitantes de manera fluida a través de
-            tu contenido, asegurando una experiencia sin fricciones y
-            satisfactoria.
+          Incluimos un robusto sistema de roles que protege tu negocio. Asigna permisos específicos a cada empleado para mantener la seguridad y el control sobre las operaciones diarias
           </p>
         </div>
         <div className="">
           <div className="gradient-mask-silver">
             <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
-              Optimización para SEO
+            Beneficios adicionales para tu negocio
             </h2>
           </div>
           <p className=" font-semibold">
-            Con nuestro enfoque en SEO, tu landing page estará lista para
-            destacar por encima de las páginas de tus competidores. Utilizamos
-            tecnologías avanzadas para mejorar tu visibilidad online y atraer
-            más tráfico a tu sitio
+          Mejora la eficiencia operativa de tu punto de venta con reportes detallados de cada transacción. Toma decisiones informadas y aprovecha nuestro asesoramiento para mantener tu negocio en su máximo rendimiento
           </p>
         </div>
       </div>

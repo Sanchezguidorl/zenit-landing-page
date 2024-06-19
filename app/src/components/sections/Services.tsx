@@ -1,30 +1,28 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
 import Migrations from './services/Migrations';
 import Inventary from './services/Inventary';
 import Landingpage from './services/Landingpage';
-import SocialMediaManagement from './services/SocialMediaManagemet';
 
 function Services() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  const [keepSlideShow, setKeepSlideShow]= useState<boolean>(false)
   // Generar componentes de servicio con claves únicas
   const services = [
     { component: <Landingpage />, key: 'ourService' },
     { component: <Inventary />, key: 'migrations1' },
-    { component: <Migrations />, key: 'migrations2' },
-    { component: <SocialMediaManagement />, key: 'migrations3' }
+    { component: <Migrations />, key: 'migrations2' }
   ];
 
   useEffect(() => {
+    if (keepSlideShow) return;
     const interval = setInterval(() => {
       setCurrentSlide(prev => (prev + 1) % services.length);
-    }, 6000); // Cambia el slide cada 6 segundos
+    }, 3000); // Cambia el slide cada 6 segundos
 
     return () => clearInterval(interval);
-  }, [services.length, currentSlide]);
+  }, [services.length, currentSlide, keepSlideShow]);
 
   const handleDotClick = (index: number) => {
     setCurrentSlide(index);
@@ -39,16 +37,19 @@ function Services() {
           </div>
         ))}
       </div>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 w-full flex flex-col items-center gap-3 z-10">
+      <button onClick={()=>setKeepSlideShow(!keepSlideShow)} className='  text-no-dark border-2 px-2 py-1 rounded-full bg-white bg-opacity-10 opacity-40 hover:opacity-90'>{!keepSlideShow?"Mantener imagen":"Continuar secuencia"}</button>
+      <div className=' flex gap-3'>
         {services.map((_, index) => (
-          <div
+          <button
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-3 h-3 rounded-full   bg-white transition-opacity duration-300 z-10 ${
+            className={`w-3 h-3 rounded-full   bg-white transition-opacity duration-300 ${
               currentSlide === index ? ' opacity-100' : ' opacity-50'
             }`}
-          ></div>
+          ></button>
         ))}
+        </div>
       </div>
     </div>
   );

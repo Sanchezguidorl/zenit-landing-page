@@ -7,7 +7,7 @@ function Benefits() {
   return (
     <div
       id="Benefits"
-      className=" py-32 flex flex-col-reverse sm:flex-row w-full"
+      className=" py-32 flex flex-col-reverse md:flex-row w-full"
     >
       <div className="flex-1 px-4 flex flex-col justify-center">
         <div className="">

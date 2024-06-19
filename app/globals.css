@@ -19,7 +19,9 @@ body {
 }
 
 .cursor-div{
-  border: 21px solid;
+  border: 22px solid;
+  background: #5a1687a1;
+  transition: width 0.2s ease, height 0.2s ease;
   mix-blend-mode: difference;
 }
 
@@ -89,6 +91,6 @@ body {
 
 .highlight-text{
   font-weight:700;
-  color: #efd6ffe2;
+  color: #efd6ff;
   text-shadow: 0px 2px 6px rgba(95, 188, 255, 0.713);
 }

@@ -39,7 +39,7 @@ function HeaderContent() {
         <Image
           loading="eager"
           src={CygnusLogo}
-          className="aspect-square"
+          className="aspect-square linkToSection"
           alt="Logo del sitio"
         />
       </div>
@@ -58,25 +58,25 @@ function HeaderContent() {
       >
         <ul className="uppercase text-white sm:flex sm:justify-between gap-4">
           <li
-            className="py-2  "
+            className="py-2 linkToSection "
             onClick={() => scrollToSection("ModernizaTuNegocio")}
           >
             Moderniza Tu Negocio
           </li>
           <li
-            className="py-2  "
+            className="py-2 linkToSection "
             onClick={() => scrollToSection("OurService")}
           >
             NUESTRO SERVICIO
           </li>
           <li
-            className="py-2  "
+            className="py-2 linkToSection "
             onClick={() => scrollToSection("Benefits")}
           >
             BENEFICIOS
           </li>
           <li
-            className="py-2  "
+            className="py-2 linkToSection "
             onClick={() => scrollToSection("Contact")}
           >
             CONTACTO
@@ -86,25 +86,25 @@ function HeaderContent() {
       <nav className="hidden sm:block text-nowrap">
         <ul className="uppercase text-white flex sm:justify-between gap-4">
           <li
-            className="  "
+            className=" linkToSection "
             onClick={() => scrollToSection("ModernizaTuNegocio")}
           >
             Moderniza Tu Negocio
           </li>
           <li
-            className=" "
+            className=" linkToSection"
             onClick={() => scrollToSection("OurService")}
           >
             NUESTRO SERVICIO
           </li>
           <li
-            className="  "
+            className=" linkToSection "
             onClick={() => scrollToSection("Benefits")}
           >
             BENEFICIOS
           </li>
           <li
-            className="  "
+            className=" linkToSection "
             onClick={() => scrollToSection("Contact")}
           >
             CONTACTO

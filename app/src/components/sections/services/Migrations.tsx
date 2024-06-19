@@ -10,39 +10,30 @@ function Migrations() {
       <div className="lg:w-1/2 px-4 text-white">
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">Diseño a medida</h2>
+            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4"> Migración sin pérdida de funcionalidades</h2>
           </div>
           <p className=" font-semibold">
-            Nos especializamos en diseños únicos que capturan la esencia de tu
-            negocio. Cada página está meticulosamente adaptada para reflejar tu
-            identidad distintiva, creando una experiencia visual que cautiva
-            desde el primer momento
+          Migramos tus sistemas antiguos a una plataforma web moderna sin perder las funciones que necesitas. Mantenemos todo lo que tu negocio ya utiliza, asegurando una transición fluida y sin interrupciones
           </p>
         </div>
         <div className="mb-8">
           <div className="gradient-mask-silver">
             <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
-              Experiencia de usuario mejorada
+              Reducción del tiempo de capacitación
             </h2>
           </div>
           <p className=" font-semibold">
-            Priorizamos la comodidad del usuario. Creamos diseños intuitivos y
-            atractivos que guían a tus visitantes de manera fluida a través de
-            tu contenido, asegurando una experiencia sin fricciones y
-            satisfactoria.
+          Nuestro nuevo sistema es intuitivo y fácil de aprender, diseñado para que tu equipo se adapte rápidamente. Ofrecemos una interfaz clara que simplifica las tareas diarias y mejora la eficiencia operativa
           </p>
         </div>
         <div className="">
           <div className="gradient-mask-silver">
             <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
-              Optimización para SEO
+            Alojamiento seguro en la web
             </h2>
           </div>
           <p className=" font-semibold">
-            Con nuestro enfoque en SEO, tu landing page estará lista para
-            destacar por encima de las páginas de tus competidores. Utilizamos
-            tecnologías avanzadas para mejorar tu visibilidad online y atraer
-            más tráfico a tu sitio
+          Tu nuevo sistema estará alojado de manera segura en la web, accesible desde cualquier lugar y dispositivo. Garantizamos la protección de tus datos con medidas de seguridad avanzadas y soporte técnico continuo
           </p>
         </div>
       </div>
