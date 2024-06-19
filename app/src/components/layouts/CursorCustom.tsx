@@ -1,5 +1,3 @@
-'use client';
-
 import { useEffect, useRef, useState } from 'react';
 
 type CursorPositionType = {
@@ -27,10 +25,7 @@ function CursorCustom() {
         const x = event.pageX;
         const y = event.pageY;
 
-        setCursorPosition({
-          x,
-          y,
-        });
+        setCursorPosition({ x, y });
       };
 
       const handleMouseEnter = () => {
@@ -43,6 +38,7 @@ function CursorCustom() {
 
       document.addEventListener('mousemove', handleCursorPosition);
 
+      // Seleccionar elementos interactuables y añadir eventos
       const interactableElements = document.querySelectorAll(
         'input, button, a, .linkToSection, textarea'
       );
@@ -59,7 +55,7 @@ function CursorCustom() {
         });
       };
     }
-  }, []);
+  }, []); // Se ejecuta solo una vez al montar el componente
 
   return (
     <div
@@ -71,7 +67,7 @@ function CursorCustom() {
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
         transform: 'translate(-50%, -50%)',
-        pointerEvents: 'none',
+        pointerEvents: 'none', // Evitar que el cursor interfiera con los elementos subyacentes
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
