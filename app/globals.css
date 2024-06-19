@@ -86,3 +86,9 @@ body {
   transform: rotateX(0deg) rotateY(43deg);
   transform-style: preserve-3d;
 }
+
+.highlight-text{
+  font-weight:700;
+  color: #efd6ffe2;
+  text-shadow: 0px 2px 6px rgba(95, 188, 255, 0.713);
+}

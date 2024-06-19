@@ -1,15 +1,15 @@
-#Positioning{
-    .stella{
-        width: 3px;
-        background: linear-gradient(#ffffffbb, #21212100);
-    }
-
+#ModernizaTuNegocio{
+    
     p{
         letter-spacing: 2px;
         background: radial-gradient(#a653ff23 10%, #00000000 70%);
     }
 }
 
+.stella{
+    width: 3px;
+    background: linear-gradient(#ffffffbb, #21212100);
+}
 .border-gradient-stella-to-right{
     border-top: 2px solid transparent;
     border-image: linear-gradient(to right, white, transparent); 

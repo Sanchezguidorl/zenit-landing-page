@@ -10,39 +10,30 @@ function OurService() {
       <div className="lg:w-1/2 px-4 text-white">
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">Diseño a medida</h2>
+            <h2 className=" text-2xl sm:text-3xl brightness-150 font-semibold mb-4">Diseño a medida</h2>
           </div>
           <p className=" font-semibold">
-            Nos especializamos en diseños únicos que capturan la esencia de tu
-            negocio. Cada página está meticulosamente adaptada para reflejar tu
-            identidad distintiva, creando una experiencia visual que cautiva
-            desde el primer momento
+          Nos especializamos en <strong className="highlight-text">diseños únicos</strong> que capturan la esencia de tu negocio. Cada página está meticulosamente adaptada para reflejar tu identidad distintiva, creando una experiencia visual que cautiva desde el primer momento
           </p>
         </div>
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
+            <h2 className=" text-2xl sm:text-3xl brightness-150 font-semibold mb-4">
               Experiencia de usuario mejorada
             </h2>
           </div>
           <p className=" font-semibold">
-            Priorizamos la comodidad del usuario. Creamos diseños intuitivos y
-            atractivos que guían a tus visitantes de manera fluida a través de
-            tu contenido, asegurando una experiencia sin fricciones y
-            satisfactoria.
+          Priorizamos la <strong className="highlight-text">comodidad de quien va a usar el sistema</strong>. Creamos diseños intuitivos y atractivos que guían a tus usuarios de manera fluida a través de tu contenido, asegurando una experiencia sin fricciones y satisfactoria
           </p>
         </div>
         <div className="">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
+            <h2 className=" text-2xl sm:text-3xl brightness-150 font-semibold mb-4">
               Optimización para SEO
             </h2>
           </div>
           <p className=" font-semibold">
-            Con nuestro enfoque en SEO, tu landing page estará lista para
-            destacar por encima de las páginas de tus competidores. Utilizamos
-            tecnologías avanzadas para mejorar tu visibilidad online y atraer
-            más tráfico a tu sitio
+          Con nuestro enfoque en SEO, tu landing page estará lista para destacar por encima de las páginas de tus competidores. Utilizamos tecnologías avanzadas para <strong className="highlight-text">mejorar tu visibilidad online</strong> y atraer más tráfico a tu sitio
           </p>
         </div>
       </div>

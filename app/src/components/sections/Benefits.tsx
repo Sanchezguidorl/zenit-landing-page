@@ -1,11 +1,15 @@
-import '../../../styles/sections/Benefits.css';
-import Image from 'next/image';
-import UpIcon from '/public/upIcon.svg';
+import "../../../styles/sections/Benefits.css";
+import Image from "next/image";
+import UpIcon from "/public/upIcon.svg";
+import CarrouselPagesDeploy from "../layouts/CarrouselPagesDeploy";
 
 function Benefits() {
   return (
-    <div id="Benefits" className=" py-32 flex flex-col-reverse sm:flex-row w-full">
-      <div className="w-full sm:w-1/2 px-4 flex flex-col justify-center">
+    <div
+      id="Benefits"
+      className=" py-32 flex flex-col-reverse sm:flex-row w-full"
+    >
+      <div className="flex-1 px-4 flex flex-col justify-center">
         <div className="">
           <div className="benefit-title">
             <h3 className=" text-2xl font-bold">Enfoque en resultados</h3>
@@ -30,10 +34,8 @@ function Benefits() {
           </p>
         </div>
       </div>
-      <div className="w-full sm:w-1/2 relative flex items-center justify-center h-[400px] ">
-        <Image src={UpIcon} alt="" className=' text-secondary absolute w-12'/>
-        <div className=" border border-y-blue h-52 w-52 rounded-full absolute  bg-transparent benefit" ></div>
-        <div className=" border border-x-secondary h-52 w-52 rounded-full absolute bg-transparent benefit-2" ></div>
+      <div className=" flex-1">
+      <CarrouselPagesDeploy/>
       </div>
     </div>
   );

@@ -59,9 +59,9 @@ function HeaderContent() {
         <ul className="uppercase text-white sm:flex sm:justify-between gap-4">
           <li
             className="py-2  "
-            onClick={() => scrollToSection("Positioning")}
+            onClick={() => scrollToSection("ModernizaTuNegocio")}
           >
-            Posicionamiento
+            Moderniza Tu Negocio
           </li>
           <li
             className="py-2  "
@@ -87,9 +87,9 @@ function HeaderContent() {
         <ul className="uppercase text-white flex sm:justify-between gap-4">
           <li
             className="  "
-            onClick={() => scrollToSection("Positioning")}
+            onClick={() => scrollToSection("ModernizaTuNegocio")}
           >
-            Posicionamiento
+            Moderniza Tu Negocio
           </li>
           <li
             className=" "
