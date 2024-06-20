@@ -52,7 +52,7 @@ function Contact() {
         ref={formRef}
         className="flex w-full flex-wrap justify-center gap-4 sm:px-20 pb-10 pt-32 px-4 items-end relative"
         onSubmit={(event) => handleSubmit(event)}
-        action="https://formspree.io/f/xpzvozaq"
+        action="https://formspree.io/f/xwpeepvr"
         method="POST"
       >
         {errorSend ? (
