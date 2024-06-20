@@ -20,25 +20,24 @@ function CursorCustom() {
       return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     };
 
+    const handleCursorPosition = (event: MouseEvent) => {
+      const x = event.pageX;
+      const y = event.pageY;
+
+      setCursorPosition({ x, y });
+    };
+
+    const handleMouseEnter = () => {
+      setIsHovering(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsHovering(false);
+    };
+
     if (!isTouchDevice() && window.innerWidth > 650) {
-      const handleCursorPosition = (event: MouseEvent) => {
-        const x = event.pageX;
-        const y = event.pageY;
-
-        setCursorPosition({ x, y });
-      };
-
-      const handleMouseEnter = () => {
-        setIsHovering(true);
-      };
-
-      const handleMouseLeave = () => {
-        setIsHovering(false);
-      };
-
       document.addEventListener('mousemove', handleCursorPosition);
 
-      // Seleccionar elementos interactuables y añadir eventos
       const interactableElements = document.querySelectorAll(
         'input, button, a, .linkToSection, textarea'
       );
@@ -55,7 +54,7 @@ function CursorCustom() {
         });
       };
     }
-  }, []); // Se ejecuta solo una vez al montar el componente
+  }, []);
 
   return (
     <div
@@ -67,7 +66,7 @@ function CursorCustom() {
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
         transform: 'translate(-50%, -50%)',
-        pointerEvents: 'none', // Evitar que el cursor interfiera con los elementos subyacentes
+        pointerEvents: 'none',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
