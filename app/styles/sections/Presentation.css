@@ -1,6 +1,6 @@
 #Presentation {
         .shadow-text-presentation{
-            animation: presentation-shadow-animation 1s ease-in;
+            animation: presentation-shadow-animation 1s linear;
             text-shadow:4px 8px 14px #c27dffcd;
         }
 
@@ -51,7 +51,7 @@
         text-shadow:-10px 0px 30px #b969ff00;
     }
     100%{
-        text-shadow:4px 8px 20px #c27dffcd;
+        text-shadow:4px 8px 14px #c27dffcd;
     }
 }
 

@@ -89,6 +89,11 @@ body {
   transform-style: preserve-3d;
 }
 
+.highlight-text-headers{
+  color: #ffffff;
+  text-shadow: 0px 2px 6px rgba(37, 127, 21, 0.713);
+} 
+
 .highlight-text{
   font-weight:700;
   color: #efd6ff;

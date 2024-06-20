@@ -8,8 +8,8 @@ function Presentation() {
       <PresentationContainer>
         <div className="gradient-mask-silver fadeIn">
           <p className="font-bold text-sm sm:text-xl lg:text-2xl uppercase ">
-            Presencia online <span className="invert ">real</span> con ayuda de{" "}
-            <span className=" invert">expertos</span>
+            Presencia online <span className="highlight-text-headers">real</span> con ayuda de{" "}
+            <span className="highlight-text-headers">expertos</span>
           </p>
         </div>
         <div className="presentation-text">
