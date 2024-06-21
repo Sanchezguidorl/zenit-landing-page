@@ -22,6 +22,7 @@ function CursorCustom() {
     const handleMouseLeave = () => setIsHovering(false);
 
     if (!isTouchDevice() && window.innerWidth > 650) {
+      console.log("Rendering cursor", cursorPosition, isHovering);
       document.addEventListener('mousemove', handleCursorPosition);
 
       const interactableElements = document.querySelectorAll('input, button, a, .linkToSection, textarea, .interactive');
@@ -40,7 +41,6 @@ function CursorCustom() {
     }
   }, []);
 
-  console.log("Rendering cursor", cursorPosition, isHovering);
 
   return (
     <div
