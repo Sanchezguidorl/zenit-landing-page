@@ -21,6 +21,7 @@ function CarrouselPagesDeploy() {
           src={GymProject}
           loading="eager"
           className="h-full object-cover"
+          sizes="(max-width: 640px) 300px, 400px"
         />
       ),
     },
@@ -32,6 +33,7 @@ function CarrouselPagesDeploy() {
           src={BarImage}
           loading="eager"
           className="h-full object-cover"
+          sizes="(max-width: 640px) 300px, 400px"
         />
       ),
     },
@@ -43,6 +45,7 @@ function CarrouselPagesDeploy() {
           loading="eager"
           className="h-full object-cover"
           src={NoterProject}
+          sizes="(max-width: 640px) 300px, 400px"
         />
       ),
     },
@@ -54,6 +57,7 @@ function CarrouselPagesDeploy() {
           loading="eager"
           className="h-full object-cover"
           src={BienesRaicesProject}
+          sizes="(max-width: 640px) 300px, 400px"
         />
       ),
     },

@@ -25,13 +25,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <body className="relative h-fit">
-        <CursorCustom />
         <BgStars />
         <div className="absolute h-full w-full overflow-hidden">
           <BgEffectContainer />
           <Planets />
         </div>
         {children}
+        <CursorCustom />
       </body>
     </html>
   );
