@@ -1,6 +1,4 @@
 import "../../../styles/sections/Benefits.css";
-import Image from "next/image";
-import UpIcon from "/public/upIcon.svg";
 import CarrouselPagesDeploy from "../layouts/CarrouselPagesDeploy";
 
 function Benefits() {
@@ -14,7 +12,7 @@ function Benefits() {
           <div className="benefit-title">
             <h3 className=" text-2xl font-bold">Enfoque en resultados</h3>
           </div>
-          <p className=" font-light mt-4">
+          <p className=" font-semibold mt-4">
             Nuestro historial de casos de éxito habla por sí mismo. Hemos
             ayudado a numerosos clientes a alcanzar sus objetivos en línea,
             desde aumentar la visibilidad hasta mejorar las conversiones y el
@@ -25,7 +23,7 @@ function Benefits() {
           <div className="benefit-title">
             <h3 className=" text-2xl font-bold">Soporte continuo</h3>
           </div>
-          <p className=" font-light mt-4">
+          <p className=" font-semibold mt-4">
             Nos comprometemos a brindar un servicio de atención al cliente de
             calidad y un seguimiento constante después del lanzamiento del sitio
             web. Además, ofrecemos servicios de mantenimiento a precios

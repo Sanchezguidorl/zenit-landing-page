@@ -1,13 +1,14 @@
-#Contact{
-
-input[type="submit"]{
-   padding: 8px 60px;
-   border: 2px solid transparent;
-   border-image: linear-gradient(to left,rgba(92, 92, 92, 0.522) , rgb(255, 255, 255),rgba(92, 92, 92, 0.522) ); 
-   border-image-slice: 1;
-   transition: all 2s ease-in-out;
-   cursor: pointer;
+#Contact input[type="submit"]{
+  padding: 8px 60px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to left,rgba(92, 92, 92, 0.522) , rgb(255, 255, 255),rgba(92, 92, 92, 0.522) ); 
+  font-weight: bold;
+  border-image-slice: 1;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
 }
+
+#Contact{
 input[type="submit"]:hover{
    border-image: linear-gradient(to left,rgba(219, 219, 219, 0.522) , rgb(255, 255, 255),rgba(219, 219, 219, 0.522)); 
    border-image-slice: 1;

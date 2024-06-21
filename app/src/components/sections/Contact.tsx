@@ -125,7 +125,7 @@ function Contact() {
           ></textarea>
         </div>
         <div className="w-full flex justify-end mt-4 mb-10">
-          <input type="submit" />
+          <input type="submit" className=' ' />
         </div>
       </form>
     </div>

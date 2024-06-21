@@ -13,10 +13,10 @@ interface Project {
 
 function CarrouselPagesDeploy() {
   const projectsDeployed: Project[] = [
-    { id: 1, component: <Image alt="Gym project image" src={GymProject} className="h-full object-cover" /> },
-    { id: 4, component: <Image alt="Bar project image" src={BarImage} className="h-full object-cover" /> },
-    { id: 2, component: <Image alt="Noter app project image" className="h-full object-cover" src={NoterProject} /> },
-    { id: 3, component: <Image alt="Bienes Raices project image" className="h-full object-cover" src={BienesRaicesProject} /> },
+    { id: 1, component: <Image alt="Gym project image" src={GymProject} loading="eager" className="h-full object-cover" /> },
+    { id: 4, component: <Image alt="Bar project image" src={BarImage} loading="eager" className="h-full object-cover" /> },
+    { id: 2, component: <Image alt="Noter app project image" loading="eager" className="h-full object-cover" src={NoterProject} /> },
+    { id: 3, component: <Image alt="Bienes Raices project image" loading="eager" className="h-full object-cover" src={BienesRaicesProject} /> },
   ];
   const [indexSelected, setIndexSelected] = useState<number>(0);
 
@@ -26,18 +26,14 @@ function CarrouselPagesDeploy() {
     );
   };
 
-  const handlePrevSlide = () => {
-    setIndexSelected((prevIndex) => (prevIndex === 0 ? projectsDeployed.length - 1 : prevIndex - 1));
-  };
-
   useEffect(() => {
     const interval = setInterval(handleNextSlide, 4000);
     return () => clearInterval(interval);
   }, [indexSelected]);
 
   return (
-    <div className="relative h-96 md:h-[450px] w-full flex items-center justify-center overflow-hidden lg:overflow-visible px-12 sm:px-40 md:px-0 lg:px-20">
-      <div className="flex justify-center px-2 md:px-4 " style={{perspective: "1000px"}}>
+    <div className="relative h-96 md:h-[450px] w-full flex items-center justify-center overflow-hidden lg:overflow-visible px-2 sm:px-40 md:px-0 lg:px-12">
+      <div className="flex justify-center px-2 md:px-2  max-w-96" style={{perspective: "1000px"}}>
         {projectsDeployed.map((project, index) => (
           <button
             key={project.id}

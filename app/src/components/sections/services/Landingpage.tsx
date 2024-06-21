@@ -5,7 +5,7 @@ function Landingpage() {
   return (
     <section className=" flex flex-col lg:flex-row-reverse flex-wrap items-center py-20" id="OurService">
       <div className="w-full lg:w-1/2 flex justify-center p-4">
-        <Image src={LandingpageImg} sizes="(max-width: 430px) 400px" loading="lazy" id="DesignsImage" alt="Imagen de diseños de sitios web en diferentes dispositivos" />
+        <Image src={LandingpageImg} sizes="(max-width: 430px) 400px" loading="eager" id="DesignsImage" alt="Imagen de diseños de sitios web en diferentes dispositivos" />
       </div>
       <div className="lg:w-1/2 px-4 text-white">
         <div className="mb-8">
