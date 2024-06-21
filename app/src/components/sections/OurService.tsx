@@ -10,7 +10,7 @@ function OurService() {
       <div className="lg:w-1/2 px-4 text-white">
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl brightness-150 font-semibold mb-4">Diseño a medida</h2>
+            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">Diseño a medida</h2>
           </div>
           <p className=" font-semibold">
           Nos especializamos en <strong className="highlight-text">diseños únicos</strong> que capturan la esencia de tu negocio. Cada página está meticulosamente adaptada para reflejar tu identidad distintiva, creando una experiencia visual que cautiva desde el primer momento
@@ -18,7 +18,7 @@ function OurService() {
         </div>
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl brightness-150 font-semibold mb-4">
+            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
               Experiencia de usuario mejorada
             </h2>
           </div>
@@ -28,7 +28,7 @@ function OurService() {
         </div>
         <div className="">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl brightness-150 font-semibold mb-4">
+            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
               Optimización para SEO
             </h2>
           </div>
