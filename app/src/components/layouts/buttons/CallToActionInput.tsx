@@ -37,7 +37,7 @@ function CallToActionInput() {
           type="text"
           name="text"
           onChange={()=>{}}
-          className={` h-8 w-80 p-2 ${
+          className={` h-8 w-80 p-2 mr-2 ${
             send ? "bg-white text-no-dark " : "bg-transparent"
           } focus:outline-none border rounded-l-full`}
           id=""
