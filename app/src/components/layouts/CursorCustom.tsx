@@ -12,7 +12,9 @@ function CursorCustom() {
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if(('ontouchstart' in window || navigator.maxTouchPoints > 0) && window.innerWidth > 650){
+      return;
+    };
 
     const handleCursorPosition = (event: MouseEvent) => {
       const x = event.pageX;
@@ -23,7 +25,6 @@ function CursorCustom() {
     const handleMouseEnter = () => setIsHovering(true);
     const handleMouseLeave = () => setIsHovering(false);
 
-    if (!isTouchDevice() && window.innerWidth > 650) {
       console.log("Adding mousemove listener");
       document.addEventListener('mousemove', handleCursorPosition);
 
@@ -41,7 +42,6 @@ function CursorCustom() {
           el.removeEventListener('mouseleave', handleMouseLeave);
         });
       };
-    }
   }, []);
 
   console.log("Rendering cursor", cursorPosition, isHovering);
