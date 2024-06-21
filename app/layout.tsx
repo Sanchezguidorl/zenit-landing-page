@@ -61,13 +61,13 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="relative h-fit">
+        <CursorCustom/>
         <BgStars />
         <div className="absolute h-full w-full overflow-hidden">
           <BgEffectContainer />
           <Planets />
         </div>
         {children}
-        <CursorCustom/>
       </body>
     </html>
   );
