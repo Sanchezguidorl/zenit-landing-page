@@ -38,16 +38,16 @@ function Services() {
         ))}
       </div>
       <div className="absolute bottom-4 w-full flex flex-col items-center gap-3 z-10">
-      <button onClick={()=>setKeepSlideShow(!keepSlideShow)} className='  text-no-dark border-2 px-2 py-1 rounded-full bg-white bg-opacity-10 opacity-40 hover:opacity-90'>{!keepSlideShow?"Mantener imagen":"Continuar secuencia"}</button>
+      <div onClick={()=>setKeepSlideShow(!keepSlideShow)} className=' interactive  text-no-dark border-2 px-2 py-1 rounded-full bg-white bg-opacity-10 opacity-40 hover:opacity-90'>{!keepSlideShow?"Mantener imagen":"Continuar secuencia"}</div>
       <div className=' flex gap-3'>
         {services.map((_, index) => (
-          <button
+          <div
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-3 h-3 rounded-full   bg-white transition-opacity duration-300 ${
+            className={`w-3 h-3 rounded-full   bg-white transition-opacity duration-300 interactive ${
               currentSlide === index ? ' opacity-100' : ' opacity-50'
             }`}
-          ></button>
+          ></div>
         ))}
         </div>
       </div>

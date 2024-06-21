@@ -33,7 +33,7 @@ function Benefits() {
         </div>
       </div>
       <div className=" flex-1">
-      <CarrouselPagesDeploy/>
+        <CarrouselPagesDeploy />
       </div>
     </div>
   );

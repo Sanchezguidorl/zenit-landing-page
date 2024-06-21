@@ -40,7 +40,7 @@ function CursorCustom() {
       document.addEventListener('mousemove', handleCursorPosition);
 
       const interactableElements = document.querySelectorAll(
-        'input, button, a, .linkToSection, textarea'
+        'input, button, a, .linkToSection, textarea, .interactive'
       );
       interactableElements.forEach((el) => {
         el.addEventListener('mouseenter', handleMouseEnter);
@@ -56,7 +56,7 @@ function CursorCustom() {
       };
     }
   }, []);
-
+console.log("Cargando cursor")
   return (
     <div
       ref={cursorRef}
