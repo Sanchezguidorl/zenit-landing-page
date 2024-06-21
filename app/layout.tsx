@@ -24,6 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
+      <head>
+        <meta name="robots" content="index, follow"/>
+      </head>
       <body className="relative h-fit">
         <BgStars />
         <div className="absolute h-full w-full overflow-hidden">

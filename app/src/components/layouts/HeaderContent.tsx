@@ -33,7 +33,7 @@ function HeaderContent() {
   return (
     <div
       ref={responsiveNavRef}
-      className="flex justify-center sm:justify-between flex-wrap sm:flex-nowrap w-full px-8 text-center text-xs sm:text-md container items-center mx-auto relative"
+      className="flex justify-center sm:justify-between flex-wrap sm:flex-nowrap w-full px-8 text-center text-xs sm:text-md container items-center mx-auto relative select-none"
     >
       <div className="w-20">
         <Image
