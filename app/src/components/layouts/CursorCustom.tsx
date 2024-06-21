@@ -49,7 +49,7 @@ function CursorCustom() {
   return (
     <div
       ref={cursorRef}
-      className={`aspect-square absolute z-40 rounded-full cursor-div ${isHovering ? 'w-16' : 'w-6'}`}
+      className={`aspect-square absolute z-50 rounded-full cursor-div ${isHovering ? 'w-16' : 'w-6'}`}
       style={{
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
