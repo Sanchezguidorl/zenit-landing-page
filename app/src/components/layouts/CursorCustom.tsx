@@ -1,4 +1,4 @@
-"use client";  // Asegura que este archivo se ejecute en el cliente
+"use client";
 import { useEffect, useRef, useState } from 'react';
 
 type CursorPositionType = {
@@ -12,36 +12,32 @@ function CursorCustom() {
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if(('ontouchstart' in window || navigator.maxTouchPoints > 0) && window.innerWidth > 650){
-      return;
-    };
+    const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
     const handleCursorPosition = (event: MouseEvent) => {
-      const x = event.pageX;
-      const y = event.pageY;
-      setCursorPosition({ x, y });
+      setCursorPosition({ x: event.pageX, y: event.pageY });
     };
 
     const handleMouseEnter = () => setIsHovering(true);
     const handleMouseLeave = () => setIsHovering(false);
 
-      console.log("Adding mousemove listener");
+    if (!isTouchDevice() && window.innerWidth > 650) {
       document.addEventListener('mousemove', handleCursorPosition);
 
       const interactableElements = document.querySelectorAll('input, button, a, .linkToSection, textarea, .interactive');
-      interactableElements.forEach((el) => {
+      interactableElements.forEach(el => {
         el.addEventListener('mouseenter', handleMouseEnter);
         el.addEventListener('mouseleave', handleMouseLeave);
       });
 
       return () => {
-        console.log("Removing mousemove listener");
         document.removeEventListener('mousemove', handleCursorPosition);
-        interactableElements.forEach((el) => {
+        interactableElements.forEach(el => {
           el.removeEventListener('mouseenter', handleMouseEnter);
           el.removeEventListener('mouseleave', handleMouseLeave);
         });
       };
+    }
   }, []);
 
   console.log("Rendering cursor", cursorPosition, isHovering);
@@ -58,6 +54,8 @@ function CursorCustom() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        border: '2px solid red',  // Asegúrate de que el cursor sea visible
+        backgroundColor: 'rgba(255, 0, 0, 0.5)',  // Asegúrate de que el cursor sea visible
       }}
     ></div>
   );
