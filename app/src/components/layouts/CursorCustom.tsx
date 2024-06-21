@@ -1,4 +1,4 @@
-"use client"
+"use client";  // Asegura que este archivo se ejecute en el cliente
 import { useEffect, useRef, useState } from 'react';
 
 type CursorPositionType = {
@@ -7,47 +7,34 @@ type CursorPositionType = {
 };
 
 function CursorCustom() {
-  const [cursorPosition, setCursorPosition] = useState<CursorPositionType>({
-    x: -200,
-    y: -200,
-  });
-
+  const [cursorPosition, setCursorPosition] = useState<CursorPositionType>({ x: -200, y: -200 });
   const [isHovering, setIsHovering] = useState(false);
-
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const isTouchDevice = () => {
-      return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    };
+    const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
     const handleCursorPosition = (event: MouseEvent) => {
       const x = event.pageX;
       const y = event.pageY;
-
       setCursorPosition({ x, y });
     };
 
-    const handleMouseEnter = () => {
-      setIsHovering(true);
-    };
-
-    const handleMouseLeave = () => {
-      setIsHovering(false);
-    };
+    const handleMouseEnter = () => setIsHovering(true);
+    const handleMouseLeave = () => setIsHovering(false);
 
     if (!isTouchDevice() && window.innerWidth > 650) {
+      console.log("Adding mousemove listener");
       document.addEventListener('mousemove', handleCursorPosition);
 
-      const interactableElements = document.querySelectorAll(
-        'input, button, a, .linkToSection, textarea, .interactive'
-      );
+      const interactableElements = document.querySelectorAll('input, button, a, .linkToSection, textarea, .interactive');
       interactableElements.forEach((el) => {
         el.addEventListener('mouseenter', handleMouseEnter);
         el.addEventListener('mouseleave', handleMouseLeave);
       });
 
       return () => {
+        console.log("Removing mousemove listener");
         document.removeEventListener('mousemove', handleCursorPosition);
         interactableElements.forEach((el) => {
           el.removeEventListener('mouseenter', handleMouseEnter);
@@ -56,13 +43,13 @@ function CursorCustom() {
       };
     }
   }, []);
-console.log("Cargando cursor")
+
+  console.log("Rendering cursor", cursorPosition, isHovering);
+
   return (
     <div
       ref={cursorRef}
-      className={`aspect-square absolute z-40 rounded-full cursor-div ${
-        isHovering ? 'w-16' : 'w-6'
-      }`}
+      className={`aspect-square absolute z-40 rounded-full cursor-div ${isHovering ? 'w-16' : 'w-6'}`}
       style={{
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
@@ -75,6 +62,5 @@ console.log("Cargando cursor")
     ></div>
   );
 }
-
 
 export default CursorCustom;
