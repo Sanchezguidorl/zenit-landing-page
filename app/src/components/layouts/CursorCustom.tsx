@@ -53,8 +53,6 @@ function CursorCustom() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        border: '2px solid red',  // Asegúrate de que el cursor sea visible
-        backgroundColor: 'rgba(255, 0, 0, 0.5)',  // Asegúrate de que el cursor sea visible
       }}
     ></div>
   );

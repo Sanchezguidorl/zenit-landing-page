@@ -10,39 +10,30 @@ function Landingpage() {
       <div className="lg:w-1/2 px-4 text-white">
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">Diseño a medida</h2>
+            <h2 className=" text-xl sm:text-3xl font-semibold mb-4">Diseños modernos</h2>
           </div>
-          <p className=" font-semibold">
-            Nos especializamos en diseños únicos que capturan la esencia de tu
-            negocio. Cada página está meticulosamente adaptada para reflejar tu
-            identidad distintiva, creando una experiencia visual que cautiva
-            desde el primer momento
+          <p className="  text-sm sm: text-md font-semibold">
+          Creamos diseños modernos que reflejan la esencia de tu marca y atraen la atención de tus clientes. Nuestros diseños no solo son estéticamente agradables, sino que también están pensados para maximizar la conversión
           </p>
         </div>
         <div className="mb-8">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
-              Experiencia de usuario mejorada
+            <h2 className=" text-xl sm:text-3xl font-semibold mb-4">
+            Adaptación a Móviles
             </h2>
           </div>
-          <p className=" font-semibold">
-            Priorizamos la comodidad del usuario. Creamos diseños intuitivos y
-            atractivos que guían a tus visitantes de manera fluida a través de
-            tu contenido, asegurando una experiencia sin fricciones y
-            satisfactoria.
+          <p className="  text-sm sm: text-md font-semibold">
+          Es esencial que tu landing page funcione perfectamente en todos los dispositivos, especialmente en móviles. Adaptamos nuestras páginas para que sean completamente responsivas, asegurando una experiencia fluida para tus clientes, sin importar el dispositivo que usen
           </p>
         </div>
         <div className="">
           <div className="gradient-mask-silver">
-            <h2 className=" text-2xl sm:text-3xl font-semibold mb-4">
-              Optimización para SEO
+            <h2 className=" text-xl sm:text-3xl font-semibold mb-4">
+            Ahorro en publicidad 
             </h2>
           </div>
-          <p className=" font-semibold">
-            Con nuestro enfoque en SEO, tu landing page estará lista para
-            destacar por encima de las páginas de tus competidores. Utilizamos
-            tecnologías avanzadas para mejorar tu visibilidad online y atraer
-            más tráfico a tu sitio
+          <p className="  text-sm sm: text-md font-semibold">
+          La velocidad de carga de tu sitio web es crucial para retener visitantes y mejorar tu posición en los motores de búsqueda. Nuestras landing pages están optimizadas para cargar rápidamente, lo que mejora la experiencia del usuario y es favorecido por Google y otros motores de búsqueda, ayudándote a obtener una mejor puntuación y más tráfico
           </p>
         </div>
       </div>
