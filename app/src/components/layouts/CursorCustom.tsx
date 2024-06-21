@@ -12,7 +12,6 @@ function CursorCustom() {
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
     const handleCursorPosition = (event: MouseEvent) => {
       setCursorPosition({ x: event.pageX, y: event.pageY });
@@ -21,7 +20,7 @@ function CursorCustom() {
     const handleMouseEnter = () => setIsHovering(true);
     const handleMouseLeave = () => setIsHovering(false);
 
-    if (!isTouchDevice() && window.innerWidth > 650) {
+    if (window.innerWidth > 650) {
       console.log("Rendering cursor", cursorPosition, isHovering);
       document.addEventListener('mousemove', handleCursorPosition);
 
