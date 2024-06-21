@@ -19,7 +19,6 @@ function CarrouselPagesDeploy() {
         <Image
           alt="Gym project image"
           src={GymProject}
-          loading="eager"
           className="h-full object-cover"
           sizes="(max-width: 640px) 300px, 400px"
         />
@@ -31,7 +30,6 @@ function CarrouselPagesDeploy() {
         <Image
           alt="Bar project image"
           src={BarImage}
-          loading="eager"
           className="h-full object-cover"
           sizes="(max-width: 640px) 300px, 400px"
         />
@@ -42,7 +40,6 @@ function CarrouselPagesDeploy() {
       component: (
         <Image
           alt="Noter app project image"
-          loading="eager"
           className="h-full object-cover"
           src={NoterProject}
           sizes="(max-width: 640px) 300px, 400px"

@@ -13,8 +13,7 @@ function Migrations() {
       <div className="w-full lg:w-1/2 flex justify-center p-4 px-8">
         <Image
           src={MigrationsImg}
-          sizes="(max-width: 430px) 400px"
-          loading="lazy"
+          sizes="(max-width: 430px) 430px"
           id="DesignsImage"
           alt="Imagen de diseños de sitios web en diferentes dispositivos"
         />

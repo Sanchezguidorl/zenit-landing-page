@@ -13,8 +13,7 @@ function Inventary() {
       <div className="w-full lg:w-1/2 flex justify-center p-4">
         <Image
           src={InventaryImg}
-          sizes="(max-width: 430px) 400px"
-          loading="lazy"
+          sizes="(max-width: 430px) 430px"
           id="DesignsImage"
           alt="Imagen de diseños de sitios web en diferentes dispositivos"
         />
