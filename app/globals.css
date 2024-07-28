@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-nunito);
+}
+
+p, span, label, button{
+  font-family: var(--font-montserrat);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

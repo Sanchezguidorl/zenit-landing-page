@@ -3,6 +3,20 @@ import BgStars from "./src/components/layouts/BgStars";
 import BgEffectContainer from "./src/components/layouts/BgEffectContainer";
 import Planets from "./src/components/layouts/Planets";
 import CursorCustom from "./src/components/layouts/CursorCustom";
+import {Nunito} from "@next/font/google";
+import {Montserrat} from "@next/font/google";
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "700", "800"],
+  variable: "--font-nunito",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
   title: "Páginas web profesionales para marcas de éxito",
@@ -21,9 +35,10 @@ export const metadata = {
   ],
 };
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${nunito.variable} ${montserrat.variable}`}>
       <head>
         <meta name="robots" content="index, follow"/>
       </head>

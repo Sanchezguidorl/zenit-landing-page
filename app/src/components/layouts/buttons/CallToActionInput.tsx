@@ -51,7 +51,7 @@ function CallToActionInput() {
         <div className="relative min-w-40">
           <button
             type="submit"
-            className={` font-semibold text-[10px] sm:text-xs uppercase rounded-r-full ${
+            className={` font-semibold text-[10px] uppercase rounded-r-full ${
               !send
                 ? " text-white bg-gradient-action"
                 : " text-no-dark bg-white "
@@ -60,7 +60,7 @@ function CallToActionInput() {
             {send ? "Solicitado" : "Solicitar contacto"}
           </button>
           {!send && (
-            <button className=" justify-center text-[10px] sm:text-xs font-semibold uppercase bg-gradient-action rounded-r-full text-white px-4 flex items-center h-8 absolute top-0 button-clone -z-0">
+            <button className=" justify-center text-[10px] font-semibold uppercase bg-gradient-action rounded-r-full text-white px-4 flex items-center h-8 absolute top-0 button-clone -z-0">
               Solicitar contacto
             </button>
           )}

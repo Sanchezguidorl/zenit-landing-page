@@ -14,7 +14,7 @@ function Footer() {
 <Link href="https://api.whatsapp.com/send?phone=543517458202">
 <Image src={WhatsappIcon} alt="Icono de Whatsapp" className=" w-14 bg-gradient-socialmedia hover:brightness-125 transition-all duration-500 opacity-85 hover:opacity-100"/>
 </Link>
-<Link href="https://www.instagram.com/_zerodev" >
+<Link href="https://www.instagram.com/cignusagency/" >
 <Image src={InstagramIcon} alt="Icono de instagram" className=" w-14 bg-gradient-socialmedia hover:brightness-125 transition-all duration-500 opacity-85 hover:opacity-100"/>
 </Link>
       </div>
