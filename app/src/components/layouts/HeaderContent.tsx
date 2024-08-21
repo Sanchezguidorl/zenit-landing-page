@@ -10,6 +10,7 @@ function HeaderContent() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setShowMenu(false);
     }
   };
 
@@ -45,7 +46,7 @@ function HeaderContent() {
       </div>
       <div className="w-full">
         <div
-          className="w-full px-6 py-4 flex justify-center opacity-80 hover:opacity-100 sm:hidden"
+          className="w-full px-6 pb-2 flex justify-center opacity-80 hover:opacity-100 sm:hidden"
           onClick={() => setShowMenu(!showMenu)}
         >
           <MenuHeader isActive={showMenu} />

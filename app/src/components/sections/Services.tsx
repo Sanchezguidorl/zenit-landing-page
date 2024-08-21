@@ -19,7 +19,7 @@ function Services() {
     if (keepSlideShow) return;
     const interval = setInterval(() => {
       setCurrentSlide(prev => (prev + 1) % services.length);
-    }, 3000); // Cambia el slide cada 6 segundos
+    }, 7000); // Cambia el slide cada 6 segundos
 
     return () => clearInterval(interval);
   }, [services.length, currentSlide, keepSlideShow]);
